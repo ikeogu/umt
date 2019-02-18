@@ -34,7 +34,7 @@
                     
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i>{{App\MgtTeam::count()}}</span>
+                    <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i>{{App\mgtTeam::count()}}</span>
                     <span class="text-nowrap"><span class="text-nowrap">}} </span> </span>
                   </p>
                 </div>
