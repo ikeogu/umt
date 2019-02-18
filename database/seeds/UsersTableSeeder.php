@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
             'member' => 'Staff',
             'department' => 'Geography',
             'osmusername' => 'University of Port Harcourt',
-            'paasport' => 'user.png',
+            'passport' => 'user.png',
             'gender' => 'Male',
             'agree' =>'I Agree',
             'phone' => ' 08063908020',
