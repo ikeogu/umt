@@ -69,7 +69,7 @@
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
                     <span class="text-success mr-2"><i class="fas fa-arrow-up"></i>  {{App\Project::count()}}</span>
-                    <span class="text-nowrap">{{ App\Project::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}}</span>
+                    <span class="text-nowrap"></span>
                   </p>
                 </div>
               </div>
