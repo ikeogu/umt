@@ -12,12 +12,14 @@
     <!-- Scripts -->
    
     <!-- Favicon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link href="{{ secure_asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
   <!-- Fonts -->
  
   <!-- Icons -->
-  <link href="{{ secure_asset('vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
-  <link href="{{ secure_asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
+  
   <!-- Argon CSS -->
   <link type="text/css" href="{{ secure_asset('css/argon.css')}}" rel="stylesheet">
 

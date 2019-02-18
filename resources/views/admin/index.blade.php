@@ -17,7 +17,7 @@
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
                     <span class="text-success mr-2"><i class="fa fa-arrow-up"></i>  {{App\User::count()}}</span>
-                    <span class="text-nowrap">{{ App\User::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}} </span> 
+                    <span class="text-nowrap"></span> 
                   </p>
                 </div>
               </div>
@@ -35,7 +35,7 @@
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
                     <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i>{{App\MgtTeam::count()}}</span>
-                    <span class="text-nowrap"><span class="text-nowrap">{{ App\MgtTeam::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}} </span> </span>
+                    <span class="text-nowrap"><span class="text-nowrap">}} </span> </span>
                   </p>
                 </div>
               </div>
@@ -52,7 +52,7 @@
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
                     <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> {{App\BoD::count()}}</span>
-                    <span class="text-nowrap">{{ App\BoD::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}}</span>
+                    <span class="text-nowrap"></span>
                   </p>
                 </div>
               </div>
