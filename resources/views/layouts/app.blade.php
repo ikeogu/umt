@@ -19,7 +19,7 @@
  
   <!-- Icons -->
   <link href="{{ asset('vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
-  
+  <link href="{{ asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="{{ secure_asset('css/argon.css')}}" rel="stylesheet">
 
