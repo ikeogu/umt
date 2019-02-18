@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <title>Admin</title>
   <!-- Favicon -->
   <link href="{{asset('img/favicon/favicon.ico')}}" rel="icon" type="image/png">
   <!-- Fonts -->
@@ -99,42 +99,42 @@
           
           <li class="nav-item">
             <a class="nav-link" href="{{route('mgtteam.create')}}">
-              <i class="ni ni-pin-3 text-orange"></i> Add Mgt Team
+              <i class="ni ni-pin-3 text-orange"></i> Add a Mgt Team
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('allmgtteam')}}">
-              <i class="ni ni-pin-3 text-orange"></i> All Mgt Team
+              <i class="ni ni-pin-3 text-orange"></i> view all Mgt Teams
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('bod.create')}}">
-              <i class="ni ni-single-02 text-yellow"></i> Board of Dir
+              <i class="ni ni-single-02 text-yellow"></i>Add a Board of Dir
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('allbod')}}">
-              <i class="ni ni-single-02 text-yellow"></i> Board of Dirs
+              <i class="ni ni-single-02 text-yellow"></i> View Board of Dirs
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('gallery.create')}}">
-              <i class="ni ni-single-02 text-yellow"></i> Post a pic
+              <i class="ni ni-single-02 text-yellow"></i> Post Event pictures
           </li> <li class="nav-item">
             <a class="nav-link" href="{{route('gallery.index')}}">
               <i class="ni ni-single-02 text-yellow"></i> Gallery
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('project.create')}}">
-              <i class="ni ni-key-25 text-info"></i> Project
+              <i class="ni ni-key-25 text-info"></i> Create Project
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('research.create')}}">
-              <i class="ni ni-key-25 text-info"></i> Research topic
+              <i class="ni ni-key-25 text-info"></i>Add Research topic
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('training.create')}}">
-              <i class="ni ni-key-25 text-info"></i> traini Cause
+              <i class="ni ni-key-25 text-info"></i>Add training Courses
             </a>
           </li>
           

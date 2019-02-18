@@ -13,7 +13,7 @@
     <div id="banner">
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 col-sm-12">
                 <div id="bg-slider" class="carousel slide" data-ride="carousel">
 
                     <!-- Wrapper for slides -->
@@ -27,16 +27,9 @@
 
                         </div>
                         <div class="item two">
-                            <div class="carousel-caption">
-                                
-                            </div>
-
+                            
                         </div>
                         <div class="item three">
-                            <div class="carousel-caption">
-                                
-                            </div>
-
                         </div>
                     </div>
 
