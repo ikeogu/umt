@@ -74,6 +74,8 @@ class RegisterController extends Controller
             'agree' => 'required','string',
             
             'phone' => 'required','string',
+            'joined' => 'required','string',
+            'joined_by' => 'required','string',
             
             
             
@@ -88,8 +90,10 @@ class RegisterController extends Controller
             'phone' => $data['phone'],
             'email' => $data['email'],
             'agree' => $data['agree'],
+            'joined' => $data['joined'],
+            'joined_by' => $data['joined_by'],
             'password' => Hash::make($data['password']),
         ]);
-        return back()->with('success', ' You are now a Member of UniqueMappersTeam Network');
+        return with('success', ' You are now a Member of UniqueMappersTeam Network');
     }
 }

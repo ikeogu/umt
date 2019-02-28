@@ -21,7 +21,7 @@
             <div class="card bg-gradient-secondary shadow">
               <div class="card-body p-lg-5">
           
-                  <strong > <h4> UniqueMappersTeam  Board of Director</h4></strong>
+                  <strong > <h4> UniqueMappersTeam  New Membership Registration/Renewal form</h4></strong>
                   <h6>Thanks for your interest in joining and supporting UniqueMappersTeam. Members of the organisation are entitled to contribute in the affairs of the organisatioin. Anyone who wants to influence the activities of UniqueMappersTeam is welcome to join.</h6>
 
                     <h4> Fill in the form below to sign up</h4>
@@ -144,19 +144,30 @@
                         </select>
                     </div>                
                      
-                    
+                    <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                     <label class="control-label col-lg-6 col-sm-9"> When did you join?</label>
+                     <div class="col-lg-6  col-sm-6 form-group">
+                      <input id="joined" type="date" class="form-control{{ $errors->has('joined') ? ' is-invalid' : '' }}" name="joined" required >
+
+                                @if ($errors->has('joined'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('joined') }}</strong>
+                                    </span>
+                                @endif
+                        </div>        
+                    </div>
+                  </div>
                
                    
                   <div class="form-group">
                     <div class="input-group input-group-alternative">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                      </div>
-                      <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Password">
+                     
+                      <input id="joined_by" type="text" class="form-control{{ $errors->has('joined_by') ? ' is-invalid' : '' }}" name="joined_by" required placeholder="How did you hear about Us?">
 
-                                @if ($errors->has('password'))
+                                @if ($errors->has('joined_by'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
+                                        <strong>{{ $errors->first('joined_by') }}</strong>
                                     </span>
                                 @endif
                     </div>
