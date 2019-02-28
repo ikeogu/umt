@@ -146,8 +146,8 @@
                      
                     <div class="form-group">
                     <div class="input-group input-group-alternative">
-                     <label class="control-label col-lg-6 col-sm-9"> When did you join?</label>
-                     <div class="col-lg-6  col-sm-6 form-group">
+                     <label class="control-label"> When did you join?</label>
+                     <div class=" form-group">
                       <input id="joined" type="date" class="form-control{{ $errors->has('joined') ? ' is-invalid' : '' }}" name="joined" required >
 
                                 @if ($errors->has('joined'))
@@ -158,7 +158,7 @@
                         </div>        
                     </div>
                   </div>
-               
+                 
                    
                   <div class="form-group">
                     <div class="input-group input-group-alternative">
@@ -173,9 +173,25 @@
                     </div>
                   </div>
                  
-                  
                   <div class="form-group ">
-                    <div class="input-group-prepend">
+                  <div class="input-group input-group-alternative mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="ni ni-lock"></i></span>
+                        </div>
+                            
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Password">
+
+                                @if ($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                    <div class="form-group ">
+                        <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                           <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="conform password">
                            

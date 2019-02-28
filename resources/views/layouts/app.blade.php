@@ -104,6 +104,19 @@
                 
               </div>
             </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text">Our Leaders Board</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="http://www.missingmaps.org/leaderboards/#/letgirlsmap" class="dropdown-item">Let Girls Map</a>
+                <a href="http://www.missingmaps.org/leaderboards/#/uniquemappersteam" class="dropdown-item">UniqueMappersteam</a>
+                <a href="http://www.missingmaps.org/leaderboards/#/osmnigeria" class="dropdown-item">OSM Nigeria</a>
+                
+                
+              </div>
+            </li>
           </ul>
           <ul class="navbar-nav align-items-lg-center ml-lg-auto">
             <li class="nav-item">
