@@ -15,7 +15,7 @@
         
       </div>
       <section class="section section-lg pt-lg-0 section-contact-us">
-      <div class="container">
+      <div class="container p-5">
         <div class="row justify-content-center ">
           <div class="col-lg-8">
             <div class="card bg-gradient-secondary shadow">

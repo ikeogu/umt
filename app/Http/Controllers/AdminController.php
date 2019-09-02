@@ -6,6 +6,10 @@ use App\Admin;
 use App\User;
 use App\BoD;
 use App\MgtTeam;
+use App\Project;
+use App\Attendance;
+use App\Gallery;
+use App\Research;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -35,14 +39,27 @@ class AdminController extends Controller
          $mem =User::all();
          return view('admin/allmembers',['mem'=>$mem]);
      }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+
+    public function project(){
+         $pro = Project::all();
+         return view('admin/allproject',['pro'=>$pro]);
+    }
+    
+    public function allAttend()
     {
+        $attend = Attendance::all();
+        return view('admin/allattendance',['attend'=>$attend]);
         //
+    }
+    public function allimage()
+    {
+        $image = Gallery::all();
+        return view('admin/allimage',['image'=>$image]);
+        //
+    }
+    public function allres(){
+        $res = Research::all();
+        return view('admin/allres',['res'=>$res]);
     }
 
     /**

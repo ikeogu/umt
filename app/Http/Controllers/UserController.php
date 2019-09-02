@@ -36,7 +36,58 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+
+         return response()->json(dd($request->all()));
+
+            // $curl = curl_init();
+            
+            // $email = $_POST['email'];
+            // $amount = $_POST['member'] * 100;  //the amount in kobo. This value is actually NGN 300
+            //  echo $email, $amount;
+            // url to go to after payment
+        //     $callback_url = 'myapp.com/pay/callback.php';  
+            
+        //     curl_setopt_array($curl, array(
+        //       CURLOPT_URL => "https://api.paystack.co/transaction/initialize",
+        //       CURLOPT_RETURNTRANSFER => true,
+        //       CURLOPT_CUSTOMREQUEST => "POST",
+        //       CURLOPT_POSTFIELDS => json_encode([
+        //         'amount'=>$amount,
+        //         'email'=>$email,
+        //         'callback_url' => $callback_url
+        //       ]),
+        //       CURLOPT_HTTPHEADER => [
+        //         "authorization: Bearer sk_test_36658e3260b1d1668b563e6d8268e46ad6da3273", //replace this with your own test key
+        //         "content-type: application/json",
+        //         "cache-control: no-cache"
+        //       ],
+        //     ));
+            
+        //     $response = curl_exec($curl);
+        //     $err = curl_error($curl);
+            
+        //     if($err){
+        //       // there was an error contacting the Paystack API
+        //       die('Curl returned error: ' . $err);
+        //     }
+            
+        //     $tranx = json_decode($response, true);
+            
+        //     if(!$tranx->status){
+        //       // there was an error from the API
+        //       print_r('API returned error: ' . $tranx['message']);
+        //     }
+            
+        //     // comment out this line if you want to redirect the user to the payment page
+        //     print_r($tranx);
+        //     // redirect to page so User can pay
+        //     // uncomment this line to allow the user redirect to the payment page
+           // header('Location: ' . $tranx['data']['authorization_url']);
+            
+
+        //     return with('success', ' You are now a Member of UniqueMappersTeam Network');
+       
     }
 
     /**
@@ -66,9 +117,10 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  int  $iddghsdghsdfgosigfh
      * @return \Illuminate\Http\Response
-     */
+     *
+     *  */
     public function update(Request $request, User $user)
     {
          
@@ -98,9 +150,18 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     public function moderator($id){
+         $mod = User::find($id);
+         $mod->isAdmin = 1;
+         $mod->save();
+         return redirect(route('allmembers'))->with('success','User made a Moderator');
+     }
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+        return redirect(route('allmembers'))->with('success','member Deleted');
     }
     public function profile()
     {

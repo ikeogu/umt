@@ -24,14 +24,14 @@
       </section>       
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-12">
+          <div class="col-12">
             <div class="row row-grid">
              @foreach($bod as $bo)
-              <div class="col-lg-4">
+              <div class="col-4 m-mt-3 pb-5">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
                     <div class="card-profile-image">
-                        <img class="rounded-circle" src="storage/passport/{{$bo->passport}}" />
+                        <img class="rounded-circle" src="storage/passport/{{$bo->passport}}" width="75%" height="95%" />
                     </div>
                     <h6 class="text-primary text-uppercase">{{$bo->name}}</h6>
                     <p class="description mt-3">Happy to be Among this Great Team, they are Unique Indeed</p>

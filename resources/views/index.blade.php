@@ -115,6 +115,63 @@
         </div>
       </div>
     </section>
+    <section class="section pb-0  bg-gradient-default">
+        <div class="container">
+          <div class="d-flex px-3">
+
+          <div class=" justify-content-center text-center mb-lg">
+            <h4 class="display-3 text-white">Benefits For volunteers</h4>
+            <p class="text-white ">UniqueMappersTeam Newtork is made up of the following sub-team.</p>
+          </div>
+
+                     
+          </div>
+          <div class="row row-grid align-items-center">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="card bg-default shadow border-0 col-4">
+                    <img src="{{asset('img/theme/1.jpg')}}" class="card-img-top" >
+                  </div>
+                  <div class="card bg-default shadow border-0 col-4">
+                      <img src="{{asset('img/theme/2.jpg')}}" class="card-img-top" >
+                    </div>
+                    <div class="card bg-default shadow border-0 col-4">
+                        <img src="{{asset('img/theme/3.jpg')}}" class="card-img-top" >
+                      </div>
+                </div>
+                <div class="row">
+                  <div class="card bg-default shadow border-0 col-4">
+                    <img src="{{asset('img/theme/4.jfif')}}" class="card-img-top" >
+                  </div>
+                  <div class="card bg-default shadow border-0 col-4">
+                      <img src="{{asset('img/theme/5.png')}}" class="card-img-top" >
+                  </div>
+                 
+                </div>
+              </div> 
+              <div class="col-md-6 ">
+                  <div class="pl-md-5">
+                    <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5 text-white">
+                      <i class="ni ni-satisfied"></i>
+                    </div>
+                    
+                    <h3 class="text-white">A brief of it</h3>
+                      <p class="text-white">UniqueMappersTeam connects you to thousands of projects in need of your help<br>When you create an account, you can track your contributions to science on your dashboard. Add your interests and location to your profile to get custom project and event recommendations. You can also connect to the thousands of other citizen scientists in our community to answer questions, share experiences, and more</p>
+                      <ul class="text-white">
+                        
+                        <li>Professional Mentoring </li>
+                        <li>Free Traning on Open source Geospatial Software Applications</li>
+                        <li>Skill Acquisation and Self development</li>
+                        <li>Gender Equality Drive</li>
+                        <li>Competent in Research and Knowledge Sharing</li>
+                        <li>Oppurtunity for Professional International Networking among communities</li>
+                        <li> Oppurtunity to Travel Grant for conferences</li>
+                      </ul>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </section>        
     <section class="section bg-secondary">
       <div class="container">
         <div class="row row-grid align-items-center">
@@ -127,7 +184,7 @@
                   <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
                 </svg>
                 <h4 class="display-3 font-weight-bold text-white">We deal With</h4>
-                <h4 class="lead text-italic text-white">OpenStreetMap (a.k.a OSM).</h4>
+                <h4 class="lead text-italic text-white">OpenStreetMap and other Open Source Geospatial Tools.</h4>
               </blockquote>
             </div>
           </div>
@@ -300,33 +357,33 @@
       </div>
     </section>
     <section class="section section-lg">
-      <div class="container">
+      <div class="container card">
         <div class="row justify-content-center text-center mb-lg">
           <div class="col-lg-8">
-            <h2 class="display-3">Our Amazing Partners</h2>
+            <h2 class="display-3 card-title">Our Amazing Partners</h2>
             <p class="lead text-muted">We are blessed by this organisations.They are indeed good partners</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+        <div class="row card-body">
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
             <div class="px-4">
               <img src="{{asset('img/theme/hot.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
               
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
             <div class="px-4">
               <img src="{{asset('img/theme/youth.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
               
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
             <div class="px-4">
               <img src="{{asset('img/theme/rich.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
               
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
             <div class="px-4">
               <img src="{{asset('img/theme/logonew.png')}}" class=" img-center img-fluid shadow shadow-lg--hover">
               
@@ -336,7 +393,69 @@
         </div>
       </div>
     </section>
-    
+    <section class="section bg-gradient-default">
+        <div class="container card">
+          <div class="row justify-content-center text-center mb-lg">
+            <div class="col-lg-8">
+              <h2 class="display-3 card-title">Platform we use</h2>
+              <p class="lead text-muted">We make use of web-based application platforms for <br> developing information systems and for<br>deploying spartial data infastructure</p>
+            </div>
+          </div>
+          <div class="row card-body">
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+              <div class="px-4">
+                <img src="{{asset('img/theme/arc.jfif')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+              <div class="px-4">
+                <img src="{{asset('img/theme/iphone.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+              <div class="px-4">
+                <img src="{{asset('img/theme/qgis.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+              <div class="px-4">
+                <img src="{{asset('img/theme/me.png')}}" class=" img-center img-fluid shadow shadow-lg--hover">
+                
+              </div>
+            </div>
+            <div class="row card-body">
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/odk.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/OSM-Fight.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/mapswipe.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/map.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover">
+                    
+                  </div>
+                </div>
+           
+          </div>
+        </div>
+      </section>
+      
     <section class="section section-lg bg-gradient-default">
       <div class="container pt-lg pb-300">
      
@@ -376,7 +495,7 @@
 					</div>
 					<div class="contact-info-box hours clearfix">
 						<h3><i class="fa fa-clock-o"></i>Hours:</h3>
-						<span><strong>Monday - Thursday:</strong> 10am - 9pm<br><strong>Friday:</strong> 10am - 4pm<br><strong>Saturday - Sunday:</strong> Not avaliable</span>
+						<span><strong>Monday - Thursday:</strong> 10am - 7pm<br><strong>Friday:</strong> 10am - 4pm<br><strong>Saturday - Sunday:</strong> Not avaliable</span>
 					</div>
 					<ul class="social-link">
 						<li class="twitter"><a href="https://twitter.com/@uniquemappers"><i class="fa fa-twitter"></i></a></li>

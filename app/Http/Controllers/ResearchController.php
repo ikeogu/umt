@@ -39,7 +39,8 @@ class ResearchController extends Controller
        
             $this->validate(request(), [
                 'name' => 'required','string',
-                
+                'link' => 'required',
+                'description' => 'required'
                 
             ]);
            
@@ -54,7 +55,7 @@ class ResearchController extends Controller
             $research->save();
              
                
-            return redirect(route('research.index'));
+            return redirect(route('research.index'))->with('success','Posted Successfully');
     }
 
     /**
@@ -74,9 +75,10 @@ class ResearchController extends Controller
      * @param  \App\Research  $research
      * @return \Illuminate\Http\Response
      */
-    public function edit(Research $research)
+    public function edit($research)
     {
-        //
+        $res = Research::find($research);
+        return view('research/edit',['res'=>$res]);
     }
 
     /**
@@ -88,7 +90,9 @@ class ResearchController extends Controller
      */
     public function update(Request $request, Research $research)
     {
-        //
+        
+        Research::whereId($research->id)->update($request->except(['_method','_token']));
+         return redirect(route('research.index'))->with('success', 'Updated');
     }
 
     /**
@@ -97,8 +101,10 @@ class ResearchController extends Controller
      * @param  \App\Research  $research
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Research $research)
+    public function destroy($research)
     {
-        //
+        $res = Research::find($research);
+        $res->delete();
+        return redirect(route('research.index'))->with('success', 'Deleted');
     }
 }

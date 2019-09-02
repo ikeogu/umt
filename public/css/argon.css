@@ -15,6 +15,9 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+p{
+    color: #000 !important;
+}
 :root
 {
     --blue: #5e72e4;
@@ -2326,6 +2329,8 @@ pre code
     border: 0;
 }
 
+
+
 .form-control
 {
     font-size: 1rem;
@@ -2339,9 +2344,9 @@ pre code
 
     transition: all .2s cubic-bezier(.68, -.55, .265, 1.55); 
 
-    color: #8898aa;
+    color: #000;
     border: 1px solid #cad1d7;
-    border-radius: .25rem;
+    
     background-color: #fff;
     background-clip: padding-box;
     box-shadow: none;
@@ -2360,13 +2365,13 @@ pre code
 }
 .form-control:focus
 {
-    color: #8898aa;
+    color: #000;
     border-color: rgba(50, 151, 211, .25);
     outline: 0;
     background-color: #fff;
     box-shadow: none, none;
 }
-.form-control::-webkit-input-placeholder
+.form-control::-webkit-focus-placeholder
 {
     opacity: 1; 
     color: #adb5bd;
@@ -2395,7 +2400,7 @@ pre code
 
 select.form-control:focus::-ms-value
 {
-    color: #8898aa;
+    color: #000;
     background-color: #fff;
 }
 
@@ -5708,8 +5713,8 @@ input[type='button'].btn-block
     word-wrap: break-word;
 
     border: .0625rem solid rgba(0, 0, 0, .05);
-    border-radius: .25rem; 
-    background-color: #fff;
+    border-radius: 0.25rem; 
+    background-color: rgb(220, 233, 241);
     background-clip: border-box;
 }
 .card > hr
@@ -10756,7 +10761,7 @@ button.bg-darker:focus
     }
     .m-md-3
     {
-        margin: 1rem !important;
+        margin: 10rem !important;
     }
     .mt-md-3,
     .my-md-3
@@ -15194,7 +15199,7 @@ a.btn-icon-only
 {
     padding: 3rem 0; 
 
-    background: #f4f5f7;
+    background: #032261;
 }
 .footer .col-footer .heading
 {
@@ -15492,11 +15497,11 @@ textarea[resize='horizontal']
 {
     font-size: 4.25rem;
 }
-
+/* 
 .icon-xl + .icon-text
 {
     width: calc(100% - $icon-size-xl - 1);
-}
+} */
 
 .icon-lg
 {
@@ -15508,11 +15513,11 @@ textarea[resize='horizontal']
 {
     font-size: 3.25rem;
 }
-
+/* 
 .icon-lg + .icon-text
 {
     width: calc(100% - $icon-size-lg - 1);
-}
+} */
 
 .icon-sm
 {
@@ -15524,11 +15529,11 @@ textarea[resize='horizontal']
 {
     font-size: 1.25rem;
 }
-
+/* 
 .icon-sm + .icon-text
 {
-    width: calc(100% - $icon-size-sm - 1);
-}
+    width: calc(100% - icon-size-sm - 1);
+} */
 
 .icon-shape
 {
@@ -17328,15 +17333,15 @@ textarea[resize='horizontal']
 }
 .section-shaped .shape-dark :nth-child(1)
 {
-    background: #2e2e57;
+    background: #032261;
 }
 .section-shaped .shape-dark :nth-child(2)
 {
-    background: #2b2b58;
+    background: #032261;
 }
 .section-shaped .shape-dark :nth-child(3)
 {
-    background: #25254d;
+    background: #032261;
 }
 .section-shaped .shape-dark :nth-child(4)
 {
@@ -18788,3 +18793,16 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 }
 
 /*Swiper*/
+
+/* 
+.partner{
+    width: 100px;
+    display: inline-flex;
+}
+
+.partner img{
+    margin: auto 5px;
+    float: left;
+    width: 150px;
+    height: 38px;
+} */

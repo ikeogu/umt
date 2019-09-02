@@ -6,23 +6,29 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+  
 
     <title>{{ config('app.name', 'UniqueMappersTeam Network') }}</title>
 
     <!-- Scripts -->
-   
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+ 
+
     <!-- Favicon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="{{ secure_asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
+  <link href="{{ asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
   <!-- Fonts -->
  
   <!-- Icons -->
   <link href="{{ asset('vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
   <link href="{{ asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
   <!-- Argon CSS -->
-  <link type="text/css" href="{{ secure_asset('css/argon.css')}}" rel="stylesheet">
-
+  <link type="text/css" href="{{ asset('css/argon.css')}}" rel="stylesheet">
+  <script src="{{ mix('js/app.js') }}"></script>
  
 </head>
 
@@ -31,8 +37,8 @@
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
       <div class="container">
         <a class="navbar-brand mr-lg-5" href="/">
-          <img src="{{secure_asset('img/brand/blue.png')}}">
-         <span >UniqueMappersTeam</span>
+          <img src="{{asset('img/brand/blue.png')}}">
+         <span style="text-transform:capitalize">UniqueMappersTeam</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,7 +48,7 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="/">
-                  <img src="{{secure_asset('img/brand/blue.png')}}">
+                  <img src="{{asset('img/brand/blue.png')}}">
                   <span >UniqueMappersTeam</span>
                 </a>
               </div>
@@ -68,7 +74,16 @@
               </a>
               <div class="dropdown-menu ">
                 
-                 
+                  <a href="{{route('attend.index')}}" class="dropdown-item">
+                    
+                      Attendance
+                       
+                    </a>
+                    <a href="{{route('minute.index')}}" class="dropdown-item">
+                    
+                        Meeting Minutes
+                         
+                      </a>
                   <a href="{{route('project.index')}}" class="dropdown-item">
                    Projects
                       
@@ -78,6 +93,7 @@
                     Research Topics
                      
                   </a>
+                  
                 
               </div>
             </li>
@@ -99,7 +115,7 @@
                 <span class="nav-link-inner--text">Get Involved</span>
               </a>
               <div class="dropdown-menu">
-                <a href="/register" class="dropdown-item">Be a Member</a>
+              <a href="/register" class="dropdown-item">Be a Member</a>
                 <a href="/login" class="dropdown-item">Login</a>
                 
               </div>
@@ -107,7 +123,7 @@
             <li class="nav-item dropdown">
               <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                 <i class="ni ni-collection d-lg-none"></i>
-                <span class="nav-link-inner--text">Our Leaders Board</span>
+                <span class="nav-link-inner--text">LeaderBoards</span>
               </a>
               <div class="dropdown-menu">
                 <a href="http://www.missingmaps.org/leaderboards/#/letgirlsmap" class="dropdown-item">Let Girls Map</a>
@@ -120,14 +136,13 @@
           </ul>
           <ul class="navbar-nav align-items-lg-center ml-lg-auto">
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="{{route('gallery.index')}}" target="_blank" data-toggle="tooltip" title="Take a look at our gallery">
-                <i class="fa fa-users"></i>
-                <span class="nav-link-inner--text d-lg-none">Gallery</span>
+              <a class="nav-link nav-link-icon" href="{{route('gallery.index')}}"  data-toggle="tooltip" title="Take a look at our gallery">
+                 Gallery
               </a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://twitter.com/@uniquemappers" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
+              <a class="nav-link nav-link-icon" href="https://twitter.com/@uniquemappers"  data-toggle="tooltip" title="Follow us on Twitter">
                 <i class="fa fa-twitter-square"></i>
                 <span class="nav-link-inner--text d-lg-none">Twitter</span>
               </a>
@@ -149,12 +164,21 @@
               </form>
 
               <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="{{route('users.edit',[Auth::user()->id])}}" target="_blank" data-toggle="tooltip" title="Edit Profile">
+              <a class="nav-link nav-link-icon" href="{{route('users.edit',[Auth::user()->id])}}" data-toggle="tooltip" title="Edit Profile">
                 <i class="fa fa-users"></i>
                 <span class="nav-link-inner--text d-lg-none">Edit Profile</span>
               </a>
             </li>
             @endif  
+            @if (Auth::user())
+            @if(auth()->user()->isAdmin == 1)
+            <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="/admin"  data-toggle="tooltip" >
+                  Admin Dashboard
+                </a>
+              </li>
+            @endif
+            @endif
 
           </ul>
         </div>
@@ -193,8 +217,8 @@
           <div class="copyright">
             &copy; <script>
            document.write(new Date().getFullYear())
-        </script> UniqueMappersTeam Network.<br /> Made with
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+        </script> UniqueMappersTeam Network.<br /> Made with love by
+            <a href="https://www.facebook.com/emmanuel.chidera.39" target="_blank">Emmanuel Chidera</a>.
           </div>
         </div>
         
@@ -202,16 +226,17 @@
     </div>
   </footer>
   <!-- Core -->
-  <script src="{{secure_asset('vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{secure_asset('vendor/popper/popper.min.js')}}"></script>
-  <script src="{{secure_asset('vendor/bootstrap/bootstrap.min.js')}}"></script>
-  <script src="{{secure_asset('vendor/headroom/headroom.min.js')}}"></script>
+  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/popper/popper.min.js')}}"></script>
+  <script src="{{asset('vendor/bootstrap/bootstrap.min.js')}}"></script>
+  <script src="{{asset('vendor/headroom/headroom.min.js')}}"></script>
   <!-- Argon JS -->
-  <script src="{{secure_asset('vendor/onscreen/onscreen.min.js')}}"></script>
-  <script src="{{secure_asset('vendor/nouislider/js/nouislider.min.js')}}"></script>
-  <script src="{{secure_asset('vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+  <script src="{{asset('vendor/onscreen/onscreen.min.js')}}"></script>
+  <script src="{{asset('vendor/nouislider/js/nouislider.min.js')}}"></script>
+  <script src="{{asset('vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <script src="{{secure_asset('js/argon.js')}}"></script>
+  <script src="{{asset('js/argon.js')}}"></script>
 
 </body>
 </html>

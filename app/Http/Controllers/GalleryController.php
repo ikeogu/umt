@@ -64,7 +64,7 @@ class GalleryController extends Controller
         $gallery->save();
          
            
-        return redirect(route('gallery.index'));
+        return redirect(route('allimage'))->with('success','Added');
     }
 
     /**
@@ -84,9 +84,10 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function edit(Gallery $gallery)
+    public function edit($id)
     {
-        //
+        $gal = Gallery::find($id);
+        return view('gallery/edit',['gal'=>$gal]);
     }
 
     /**
@@ -96,9 +97,11 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gallery $gallery)
+    public function update(Request $request,  $gallery)
     {
-        //
+         
+        Gallery::whereId($gallery)->update($request->except(['_method','_token']));
+         return redirect(route('allimage'))->with('success', 'Updated');
     }
 
     /**
@@ -107,8 +110,11 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Gallery $gallery)
+    public function destroy( $gallery)
     {
         //
+        $img = Gallery::find($gallery);
+        $img->delete();
+        return redirect(route('allimage'))->with('success', 'Deleted');
     }
 }

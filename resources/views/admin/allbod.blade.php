@@ -1,68 +1,90 @@
-@extends('layouts.admindashboard')
-@section('dash')
+@extends('layouts.admin')
+@section('contents')
 
-<!-- Dark table -->
-<div class="row mt-5">
-        <div class="col">
-          <div class="card bg-default shadow">
-            <div class="card-header bg-transparent border-0">
-            <h3 class="text-white mb-0">Board of Directors </h3>
-              <h3 class="text-white mb-0">They are {{App\BoD::count()}} in Number  </h3>
-            </div>
-            <div class="table-responsive">
-              <table class="table align-items-center table-dark table-flush">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Department</th>
-                    <th scope="col">Position</th>
-                    <th scope="col">Pic</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                @foreach($bod as $bo)
-                <tbody>
-                  <tr>
-                    
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <h5>{{$bo->id}}</h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <h5>{{$bo->name}}</h5>
-                        </div>
-                        </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <h5>{{$bo->department}}</h5>
-                      </div>
-                    </td>
-                   
-                  
-                  
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <h5>{{$bo->position}}</h5>
-                      </div>
-                    </td>
-                    <td class="text-right">
-                        <div class="media align-items-center">
-                            <a href="#" class="avatar rounded-circle mr-3">
-                            <img alt="Image placeholder" src="storage/passport/{{$bo->passport}}">
-                            </a>
-                        </div>
-                    </td>
-                                  
-                  </tr>
-                 
-                </tbody>
-                @endforeach
-              </table>
-            </div>
+<div class="content">
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div><br />
+    @endif
+    @if (\Session::has('success'))
+    <div class="alert alert-success">
+        <p>{{ \Session::get('success') }}</p>
+    </div><br />
+    @endif
+</div>
+  
+
+<div class="panel panel-default">
+  <div class="panel-heading main-color-bg">
+      <h3 class="panel-title">Board of Directors </h3>
+  </div>
+  <div class="panel-body">
+      <div class="row">
+          <div class="col-md-12">
+             
           </div>
-        </div>
       </div>
+      <br>
+      <table class="table table-strip table-hover">
+          <tr>
+            <th >ID</th>
+            <th >Name</th>
+            <th >Department</th>
+            <th >Position</th>
+            <th >Pic</th>
+            <th ></th>
+          </tr>
+          @foreach ($bod as $bo)
+          <tr>
+              
+            <td>
+              <div class="d-flex align-items-center">
+                  <h5>{{$bo->id}}</h5>
+              </div>
+            </td>
+            <td>
+                <div class="d-flex align-items-center">
+                    <h5>{{$bo->name}}</h5>
+                </div>
+                </td>
+            <td>
+              <div class="d-flex align-items-center">
+                <h5>{{$bo->department}}</h5>
+              </div>
+            </td>
+          
+          
+          
+            <td>
+              <div class="d-flex align-items-center">
+                <h5>{{$bo->position}}</h5>
+              </div>
+            </td>
+            <td class="text-right">
+                <div class="media align-items-center">
+                    <a  class="avatar rounded-circle mr-3">
+                    <img src="storage/passport/{{$bo->passport}}"  height="60" width="60">
+                    </a>
+                </div>
+            </td>
+          <td><a class="btn btn-default" href="/bod/{{$bo->id}}/">Edit</a> 
+              <form action="{{ route('bod.destroy' , $bo->id)}}" method="POST">
+                <input name="_method" type="hidden" value="DELETE">
+                {{ csrf_field() }}                                                       
+                  <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                
+              </form>
+            </td>
+          </tr>
+          @endforeach
+         
+         
+      </table>
+  </div>
+</div>
 @endsection

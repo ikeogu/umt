@@ -69,7 +69,7 @@ class BoDController extends Controller
         $bod->save();
          
            
-        return redirect(route('bod.index'))->with('success', 'You have successful added a Board of Dir.');
+        return redirect(route('allbod'))->with('success', 'Successful added a Board of Dir.');
     }
 
     /**
@@ -89,21 +89,24 @@ class BoDController extends Controller
      * @param  \App\BoD  $boD
      * @return \Illuminate\Http\Response
      */
-    public function edit(BoD $boD)
+    public function edit($id)
     {
-        //
+        $pro = BoD::findOrFail($id);
+        return view('Bod/edit',['bod'=>$pro]);
     }
 
     /**
      * Update the specified resource in storage.
-     *
+     * 
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\BoD  $boD
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BoD $boD)
+    public function update(Request $request, $id)
     {
-        //
+        
+        BoD::whereId($id)->update($request->except(['_method','_token']));
+         return redirect(route('allbod'))->with('success', 'Updated');
     }
 
     /**
@@ -112,8 +115,10 @@ class BoDController extends Controller
      * @param  \App\BoD  $boD
      * @return \Illuminate\Http\Response
      */
-    public function destroy(BoD $boD)
+    public function destroy($id)
     {
-        //
+        $pro = BoD::findOrFail($id);
+        $pro->delete();
+        return redirect(route('allbod'));
     }
 }

@@ -40,7 +40,8 @@ class TraningController extends Controller
     {
                    $this->validate(request(), [
                 'name' => 'required','string',
-                
+                'link' => 'required',
+                'description' => 'required'
                 
             ]);
            
@@ -55,7 +56,7 @@ class TraningController extends Controller
             $training->save();
              
                
-            return redirect(route('training.index'));
+            return redirect(route('training.index'))->with('success','Added');
     }
 
     /**
@@ -75,9 +76,10 @@ class TraningController extends Controller
      * @param  \App\Traning  $traning
      * @return \Illuminate\Http\Response
      */
-    public function edit(Traning $traning)
+    public function edit($id)
     {
-        //
+        $trn = Traning::find($id);
+        return view('training/edit',['trn'=>$trn]); 
     }
 
     /**
@@ -89,7 +91,9 @@ class TraningController extends Controller
      */
     public function update(Request $request, Traning $traning)
     {
-        //
+         
+        Traning::whereId($traning->id)->update($request->except(['_method','_token']));
+         return redirect(route('training.index'))->with('success', ' Updated');
     }
 
     /**
@@ -98,8 +102,11 @@ class TraningController extends Controller
      * @param  \App\Traning  $traning
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Traning $traning)
+    public function destroy($id)
     {
-        //
+        $trn = Traning::find($id);
+        $trn->delete();
+        return redirect(route('training.index'))->with('success', ' Deleted');
+
     }
 }

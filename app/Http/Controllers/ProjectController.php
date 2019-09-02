@@ -67,7 +67,7 @@ class ProjectController extends Controller
         $project->save();
          
            
-        return redirect(route('project.index'));
+        return redirect(route('allpro'));
     }
 
     /**
@@ -89,9 +89,11 @@ class ProjectController extends Controller
      * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(Project $project)
+    public function edit($id)
     {
-        //
+        $project = Project::find($id);
+        return view('projects/edit',['project'=>$project]);
+        
     }
 
     /**
@@ -101,9 +103,10 @@ class ProjectController extends Controller
      * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Project $project)
+    public function update(Request $request, $id)
     {
-        //
+        Project::whereId($id)->update($request->except(['_method','_token']));
+         return redirect(route('allpro'))->with('success', 'Updated');
     }
 
     /**
@@ -112,8 +115,10 @@ class ProjectController extends Controller
      * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Project $project)
+    public function destroy($id)
     {
-        //
+        $pro = Project::findOrFail($id);
+        $pro->delete();
+        return redirect(route('allpro'));
     }
 }

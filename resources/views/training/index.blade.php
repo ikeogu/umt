@@ -9,7 +9,7 @@
             <span></span>
         </div>
  <!-- SVG separator -->
- <div class="separator separator-bottom separator-skew">
+        <div class="separator separator-bottom separator-skew">
           <svg x="0" y="0" viewBox="0 0 2160 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
        
             <polygon class="fill-white" points="2160 0 2160 100 0 100"></polygon>

@@ -2,31 +2,31 @@
 
 @section('content')
 
- <section class="section section-shaped section-lg">
-      <div class="shape shape-style-1 bg-gradient-default">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+  <section class="section section-shaped section-lg">
+    <div class="shape shape-style-1 bg-gradient-default">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
         
-      </div>
-      <section class="section section-lg pt-lg-0 section-contact-us">
-      <div class="container">
+    </div>
+    <section class="section section-lg pt-lg-0 section-contact-us">
+      <div class="container p-5">
         <div class="row justify-content-center ">
-          <div class="col-lg-8">
+          <div class="col-8">
             <div class="card bg-gradient-secondary shadow">
-              <div class="card-body p-lg-5">
+              <div class="card-body p-5">
           
                   <strong > <h4> UniqueMappersTeam  New Membership Registration/Renewal form</h4></strong>
-                  <h6>Thanks for your interest in joining and supporting UniqueMappersTeam. Members of the organisation are entitled to contribute in the affairs of the organisatioin. Anyone who wants to influence the activities of UniqueMappersTeam is welcome to join.</h6>
+                  <p>Thanks for your interest in joining and supporting UniqueMappersTeam. Members of the organisation are entitled to contribute in the affairs of the organisatioin. </p>
 
                     <h4> Fill in the form below to sign up</h4>
-                </div>
-                <div class="content">
+              </div>s
+              <div class="content">
                   @if ($errors->any())
                   <div class="alert alert-danger">
                       <ul>
@@ -42,28 +42,28 @@
                   </div><br />
                   @endif
               </div>
-                <form method="POST" action="{{ route('register') }}" role="form" enctype="multipart/form-data">
+              <form method="POST" action="{{ route('register') }}" role="form" enctype="multipart/form-data" class="p-5">
                         @csrf
                             
                         
-                  <div class="form-group">
-                    <div class="input-group input-group-alternative mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                      </div>
-                      <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus placeholder="Name">
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-hat-2"></i></span>
+                    </div>
+                    <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus placeholder="Name">
 
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
+                        @if ($errors->has('name'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('name') }}</strong>
+                            </span>
+                        @endif
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="input-group input-group-alternative mb-3">
                       <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                        <span class="input-group-text"><i class="ni ni-email-8"></i></span>
                       </div>
                       <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required placeholder="Email">
 
@@ -77,7 +77,7 @@
                   <div class="form-group">
                         <div class="input-group input-group-alternative mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="ni ni-phone"></i></span>
+                            <span class="input-group-text"><i class="ni ni-phone-3"></i></span>
                         </div>
                         <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" value="{{ old('phone') }}" required placeholder="Phone">
 
@@ -95,11 +95,10 @@
                         </div>
                             
                             <select name="gender" class="form-control">
-                                <option>Gender</option>
+                                
                                 <option value="Female">Female </option>
                                 <option value="Male"> Male </option>
-                                <option value="Other"> Other </option>
-                            
+                                
                             </select>
                         </div>
                     </div>
@@ -115,7 +114,7 @@
                                   <strong>{{ $errors->first('osmusername') }}</strong>
                               </span>
                           @endif
-                            <h5> if you don't have an  OSM username click on this <a href="https://www.openstreetmap.org"> link</a> to get one and continue the rigistration.</h5>
+                            <span> No  OSM username click on this <a href="https://www.openstreetmap.org"> link</a> to get one and continue the registration.</span>
                         </div> 
                     </div>
                     <div class="form-group">
@@ -132,64 +131,61 @@
                             @endif
                         </div> 
                     </div>
-                       
-                    <LABEL class="control-label col-lg-6 col-sm-9">Membership Category</LABEL>
-                    <div class="col-lg-6  col-sm-6 form-group">
+                  <div class="row">     
+                    
+                    <div class="col-6 form-group">
+                        <label class="control-label"> Membership Category </label>
                         <select class="form-control" name="member">
-                              <option>--SELECT--</option>
-                              <OPTION value="UnderGraduate - N1000">UnderGraduate - N1000</OPTION>
-                              <OPTION value="Post-Graduate - N2000">Post-Graduate - N2000</OPTION>
-                              <OPTION value="Senoir Friend - N3000">Senoir Friend -N3000</OPTION>
-                              <OPTION value="Staff Member - N5000">Staff Member - N5000</OPTION>                       
+                              <option value="1000">UnderGraduate - N1000</option>
+                              <option value="2000">Post-Graduate - N2000</option>
+                              <option value="3000">Senoir Friend -N3000</option>
+                              <option value="5000">Staff Member - N5000</option>                       
                         </select>
                     </div>                
                      
-                    <div class="form-group">
-                    <div class="input-group input-group-alternative">
+                    <div class="form-group col-6">
+                    
                      <label class="control-label"> When did you join?</label>
-                     <div class=" form-group">
+                     
                       <input id="joined" type="date" class="form-control{{ $errors->has('joined') ? ' is-invalid' : '' }}" name="joined" required >
 
-                                @if ($errors->has('joined'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('joined') }}</strong>
-                                    </span>
-                                @endif
-                        </div>        
-                    </div>
+                        @if ($errors->has('joined'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('joined') }}</strong>
+                            </span>
+                        @endif
+                    </div>        
+                   
                   </div>
                  
                    
                   <div class="form-group">
                     <div class="input-group input-group-alternative">
                      
-                      <input id="joined_by" type="text" class="form-control{{ $errors->has('joined_by') ? ' is-invalid' : '' }}" name="joined_by" required placeholder="How did you hear about Us?">
+                      <input id="joined_by" type="text" class="form-control{{ $errors->has('joined_by') ? ' is-invalid' : '' }}" name="joined_by" required placeholder="How did you hear about us?">
 
-                                @if ($errors->has('joined_by'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('joined_by') }}</strong>
-                                    </span>
-                                @endif
+                        @if ($errors->has('joined_by'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('joined_by') }}</strong>
+                            </span>
+                        @endif
                     </div>
                   </div>
                  
-                  <div class="form-group ">
-                  <div class="input-group input-group-alternative mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="ni ni-lock"></i></span>
-                        </div>
-                            
+                  <div class="form-group">
+                 
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                      
+                      <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Password">
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Password">
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+                        @if ($errors->has('password'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
+                    </div>        
+                  </div>
                     <div class="form-group ">
                         <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>

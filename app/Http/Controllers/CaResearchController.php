@@ -68,7 +68,7 @@ class CaResearchController extends Controller
         $caresearch->save();
          
            
-        return redirect(route('allcaresearch'));
+        return redirect(route('allcaresearch.index'))->with('success','Added');
     }
 
     /**
@@ -88,9 +88,10 @@ class CaResearchController extends Controller
      * @param  \App\CaResearch  $caResearch
      * @return \Illuminate\Http\Response
      */
-    public function edit(CaResearch $caResearch)
+    public function edit($id)
     {
-        //
+        $car = CaResearch::find($id);
+        return view('caresearch/edit',['car'=>$car]);
     }
 
     /**
@@ -100,9 +101,10 @@ class CaResearchController extends Controller
      * @param  \App\CaResearch  $caResearch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CaResearch $caResearch)
+    public function update(Request $request,  $caResearch)
     {
-        //
+        CaResearch::whereId($caResearch)->update($request->except(['_method','_token']));
+        return redirect(route('allcaresearch.index'))->with('success', ' Updated');
     }
 
     /**
@@ -111,8 +113,12 @@ class CaResearchController extends Controller
      * @param  \App\CaResearch  $caResearch
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CaResearch $caResearch)
+    public function destroy($id)
     {
-        //
+        
+        $car = CaResearch::find($id);
+        $car->delete();
+        return redirect(route('allcaresearch.index'))->with('success', ' Deleted');
+
     }
 }

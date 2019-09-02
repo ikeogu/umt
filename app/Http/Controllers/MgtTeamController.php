@@ -69,7 +69,7 @@ class MgtTeamController extends Controller
         $mgt->save();
          
            
-        return redirect(route('allmgtteam'))->with('success', 'You have successful added a Board of Dir.');
+        return redirect(route('allmgtteam'))->with('success', 'Successful!.');
     }
 
     /**
@@ -89,9 +89,10 @@ class MgtTeamController extends Controller
      * @param  \App\mgtTeam  $mgtTeam
      * @return \Illuminate\Http\Response
      */
-    public function edit(mgtTeam $mgtTeam)
+    public function edit($id)
     {
-        //
+        $mgt = MgtTeam::find($id);
+        return view('mgtteam/edit',['mgt'=>$mgt]);
     }
 
     /**
@@ -101,9 +102,11 @@ class MgtTeamController extends Controller
      * @param  \App\mgtTeam  $mgtTeam
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, mgtTeam $mgtTeam)
+    public function update(Request $request, $mgtTeam)
     {
         //
+        MgtTeam::whereId($mgtTeam)->update($request->except(['_method','_token']));
+        return redirect(route('allmgtteam'))->with('success', 'MgtTeam Updated');
     }
 
     /**
@@ -112,8 +115,11 @@ class MgtTeamController extends Controller
      * @param  \App\mgtTeam  $mgtTeam
      * @return \Illuminate\Http\Response
      */
-    public function destroy(mgtTeam $mgtTeam)
+    public function destroy($id)
     {
-        //
+        $mgt = MgtTeam::find($id);
+        $mgt->delete();
+        return redirect(route('allmgtteam'))->with('success', 'MgtTeam Updated');
+
     }
 }
