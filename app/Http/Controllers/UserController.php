@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
+use Cloudder;
+use Cloudinary;
+
 
 class UserController extends Controller
 {
@@ -174,7 +177,11 @@ class UserController extends Controller
         ]);
         $User = Auth::user();
         $avatarName = $User->id.'_avatar'.time().'.'.request()->passport->getClientOriginalExtension();
-        $request->passport->storeAs('public/avatars',$avatarName);
+          
+        $image = Cloudinary\Uploader::upload($avatarName);
+              
+        $image_url = data_get($image,'url');
+        $request->passport->$image_url;
         $User->passport = $avatarName;
         $User->save();
         return back()

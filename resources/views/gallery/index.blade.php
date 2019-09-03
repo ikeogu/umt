@@ -31,7 +31,7 @@
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body ">
                     <div class="card-profile-image">
-                        <img class="img-responsive" src="storage/picture/{{$bo->picture}}" width="100%" height="100%"/>
+                        <img class="img-responsive" src="{{$bo->picture}}" width="100%" height="100%"/>
                     </div>
                    
                    

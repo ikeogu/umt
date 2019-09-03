@@ -31,7 +31,7 @@
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
                     <div class="card-profile-image">
-                        <img class="img-responsive" src="storage/project/{{$bo->passport}}" width="100%" height="100%"/>
+                        <img class="img-responsive" src="{{$bo->passport}}" width="100%" height="100%"/>
                     </div>
                     <h6 class="text-primary text-uppercase">{{$bo->name}}</h6>
                     <p class="description mt-3">{{$bo->date}}</p>

@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\BoD;
 use Illuminate\Http\Request;
+use Cloudder;
+use Cloudinary;
+
 
 class BoDController extends Controller
 {
@@ -54,12 +57,15 @@ class BoDController extends Controller
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('passport')->storeAs('public/passport', $fileNameToStore);
+            $image = Cloudinary\Uploader::upload($fileNameToStore);
+              
+           $image_url = data_get($image,'url');
+         
         }else{
-            $fileNameToStore = 'noimage.jpg';
+            $image_url = 'noimage.jpg';
         }
         $bod = new BoD();
-        $bod->passport = $fileNameToStore;
+        $bod->passport = $image_url;
         $bod->name = $request->Input('name');
         $bod->position = $request->Input('position');
         

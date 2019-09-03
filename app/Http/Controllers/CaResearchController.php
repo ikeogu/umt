@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\CaResearch;
 use Illuminate\Http\Request;
+use Cloudder;
+use Cloudinary;
+
 
 class CaResearchController extends Controller
 {
@@ -52,13 +55,17 @@ class CaResearchController extends Controller
             $extension = $request->file('passport')->getClientOriginalExtension();
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
-            //upload image
-            $path = $request->file('passport')->storeAs('public/Caresearch', $fileNameToStore);
+            //upload image$image = Cloudinary\Uploader::upload($fileNameToStore);
+              
+            $image = Cloudinary\Uploader::upload($fileNameToStore);
+              
+            $image_url = data_get($image,'url');
+         
         }else{
-            $fileNameToStore = 'noimage.jpg';
+            $image_url = 'noimage.jpg';
         }
         $caresearch = new CaResearch();
-        $caresearch->passport = $fileNameToStore;
+        $caresearch->passport = $image_url;
         $caresearch->name = $request->Input('name');
         $caresearch->body = $request->Input('body');
         $caresearch->author = $request->Input('author');

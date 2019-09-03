@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Gallery;
 use Illuminate\Http\Request;
+use Cloudder;
+use Cloudinary;
 
 class GalleryController extends Controller
 {
@@ -52,12 +54,17 @@ class GalleryController extends Controller
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('picture')->storeAs('public/picture', $fileNameToStore);
+            
+           $image = Cloudinary\Uploader::upload($fileNameToStore);
+              
+           $image_url = data_get($image,'url');
+         
+           
         }else{
-            $fileNameToStore = 'noimage.jpg';
+            $image_url = 'noimage.jpg';
         }
         $gallery= new Gallery();
-        $gallery->picture= $fileNameToStore;
+        $gallery->picture= $image_url;
         $gallery->name = $request->Input('name');
               
         

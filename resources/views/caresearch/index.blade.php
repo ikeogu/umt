@@ -31,7 +31,7 @@
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
                     <div class="card-profile-image">
-                        <img class="rounded-circle" src="storage/research/{{$bo->passport}}" />
+                        <img class="rounded-circle" src="{{$bo->passport}}" />
                     </div>
                     <h6 class="text-primary text-uppercase">{{$bo->name}}</h6>
                     <p class="description mt-3"></p>

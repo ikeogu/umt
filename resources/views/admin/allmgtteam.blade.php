@@ -68,7 +68,7 @@
             <td >
                 <div class="media align-items-center">
                     <a  class="avatar rounded-circle mr-3">
-                    <img src="/storage/mgt/{{$bo->passport}}" height="60" width="60">
+                    <img src="{{$bo->passport}}" height="60" width="60">
                     </a>
                 </div>
             </td>

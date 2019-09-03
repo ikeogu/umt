@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Project;
 use Illuminate\Http\Request;
+use Cloudder;
+use Cloudinary;
+
 
 class ProjectController extends Controller
 {
@@ -53,12 +56,15 @@ class ProjectController extends Controller
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('passport')->storeAs('public/project', $fileNameToStore);
+             
+            $image = Cloudinary\Uploader::upload($fileNameToStore);
+              
+            $image_url = data_get($image,'url');
         }else{
-            $fileNameToStore = 'noimage.jpg';
+            $image_url= 'noimage.jpg';
         }
         $project = new project();
-        $project->passport = $fileNameToStore;
+        $project->passport =$image_url;
         $project->name = $request->Input('name');
         $project->date = $request->Input('date');
         $project->body = $request->Input('body');

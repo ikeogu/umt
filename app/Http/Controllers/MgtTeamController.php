@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\mgtTeam;
 use Illuminate\Http\Request;
+use Cloudder;
+use Cloudinary;
+
 
 class MgtTeamController extends Controller
 {
@@ -54,12 +57,14 @@ class MgtTeamController extends Controller
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('passport')->storeAs('public/mgt', $fileNameToStore);
+            $image = Cloudinary\Uploader::upload($fileNameToStore);
+              
+            $image_url = data_get($image,'url');
         }else{
-            $fileNameToStore = 'noimage.jpg';
+            $image_url = 'noimage.jpg';
         }
         $mgt = new MgtTeam();
-        $mgt->passport = $fileNameToStore;
+        $mgt->passport =  $image_url;
         $mgt->name = $request->Input('name');
         $mgt->position = $request->Input('position');
         $mgt->wok = $request->Input('wok');

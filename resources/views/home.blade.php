@@ -232,7 +232,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
-                  <img class="rounded-circle" src="storage/avatars/{{Auth::user()->passport}}" />
+                  <img class="rounded-circle" src="{{Auth::user()->passport}}" />
                 </div>
                 
               </div>

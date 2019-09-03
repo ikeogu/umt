@@ -31,7 +31,7 @@
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body p-5">
                     <div class="card-profile-image">
-                        <img class="rounded-circle" src="storage/mgt/{{$bo->passport}}" width="75%" height="95%"/>
+                        <img class="rounded-circle" src="{{$bo->passport}}" width="75%" height="95%"/>
                     </div>
                     <h6 class="text-primary text-uppercase">{{$bo->name}}</h6>
                     <p class="description mt-3">Happy to be Among this Great Team, they are Unique Indeed</p>

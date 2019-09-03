@@ -129,43 +129,36 @@
           <div class="row row-grid align-items-center">
               <div class="col-md-6">
                 <div class="row">
-                  <div class="card bg-default shadow border-0 col-4">
-                    <img src="{{asset('img/theme/1.jpg')}}" class="card-img-top" >
+                  <div class=" bg-default shadow border-0 ">
+                    <img src="{{asset('img/theme/benefits.png')}}" class="card-img-top" height="500" width="1500">
                   </div>
-                  <div class="card bg-default shadow border-0 col-4">
-                      <img src="{{asset('img/theme/2.jpg')}}" class="card-img-top" >
-                    </div>
-                    <div class="card bg-default shadow border-0 col-4">
-                        <img src="{{asset('img/theme/3.jpg')}}" class="card-img-top" >
-                      </div>
-                </div>
-                <div class="row">
-                  <div class="card bg-default shadow border-0 col-4">
-                    <img src="{{asset('img/theme/4.jfif')}}" class="card-img-top" >
-                  </div>
-                  <div class="card bg-default shadow border-0 col-4">
-                      <img src="{{asset('img/theme/5.png')}}" class="card-img-top" >
-                  </div>
+                  
                  
                 </div>
               </div> 
-              <div class="col-md-6 ">
+              <div class="col-md-6 p-5">
                   <div class="pl-md-5">
                     <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5 text-white">
                       <i class="ni ni-satisfied"></i>
                     </div>
                     
                     <h3 class="text-white">A brief of it</h3>
-                      <p class="text-white">UniqueMappersTeam connects you to thousands of projects in need of your help<br>When you create an account, you can track your contributions to science on your dashboard. Add your interests and location to your profile to get custom project and event recommendations. You can also connect to the thousands of other citizen scientists in our community to answer questions, share experiences, and more</p>
+                      <p class="text-white">UniqueMappersTeam connects you to thousands of projects in need of your help<br>When you create an account, you can track your contributions to OSM on your dashboard. Add your interests and location to your profile to get custom project and event recommendations. You can also connect to the thousands of other citizen scientists / volunteers in our community to answer questions, share experiences, and more</p>
                       <ul class="text-white">
-                        
+                        <li>Crowd sourcing</li>
+                        <li>Field data collction </li>
+                        <li>Open data mapping</li>
+                        <li>Open Source Geospatial Technology Empowerment</li>
+                        <li>Open source innovation</li>
+                        <li>Community Participatory research </li>
+                        <li>Participatory Citizen Science Activities/ Research</li>
                         <li>Professional Mentoring </li>
                         <li>Free Traning on Open source Geospatial Software Applications</li>
                         <li>Skill Acquisation and Self development</li>
                         <li>Gender Equality Drive</li>
                         <li>Competent in Research and Knowledge Sharing</li>
                         <li>Oppurtunity for Professional International Networking among communities</li>
-                        <li> Oppurtunity to Travel Grant for conferences</li>
+                        <li>Oppurtunity to Travel Grant for conferences</li>
                       </ul>
                   </div>
                 </div>
@@ -193,7 +186,7 @@
               <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                 <i class="ni ni-satisfied"></i>
               </div>
-              <h3>OPenStreetMap</h3>
+              <h3>OpenStreetMap</h3>
               <p class="lead">OSM is a map and database whereby the stored geographic data is owned by the contributors themselves, allowing everyone to view, create, use this information for free, in new and innovative ways. We use this great tool, which is the editable map of the world,in which every features of the earth can be represented, these features includes building,roads,water ways and more.</p>
               <p>To help in humanitarian services, we use this tool to represent  communities prone to disasters on the digital map and those NGOs who are to take care of those in need of help can easily get information of these communities prone to disaster and respond to them </p>
               <p>We try to represent every family on this platform and from this OpenStreetmap Platform, research can be carried out, like high density of Malaria in Nigeria.</p>
@@ -398,7 +391,7 @@
           <div class="row justify-content-center text-center mb-lg">
             <div class="col-lg-8">
               <h2 class="display-3 card-title">Platform we use</h2>
-              <p class="lead text-muted">We make use of web-based application platforms for <br> developing information systems and for<br>deploying spartial data infastructure</p>
+              <p class="lead text-black">We make use of web-based application platforms for <br> developing information systems and for<br>deploying spartial data infastructure</p>
             </div>
           </div>
           <div class="row card-body">
@@ -427,31 +420,52 @@
               </div>
             </div>
             <div class="row card-body">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
-                  <div class="px-4">
-                    <img src="{{asset('img/theme/odk.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
-                    
-                  </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/odk.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
-                  <div class="px-4">
-                    <img src="{{asset('img/theme/OSM-Fight.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
-                    
-                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/OSM-Fight.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
-                  <div class="px-4">
-                    <img src="{{asset('img/theme/mapswipe.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
-                    
-                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/mapswipe.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
                 </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
-                  <div class="px-4">
-                    <img src="{{asset('img/theme/map.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover">
-                    
-                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/map.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover">
+                  
                 </div>
-           
+              </div>
+            </div>
+            <div class="row card-body">
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/globe.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/mos.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/stall.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
       </section>
@@ -461,8 +475,8 @@
      
         <div class="row justify-content-center text-center mb-lg">
           <div class="col-lg-8">
-            <h2 class="display-3 text-white">Contact Us</h2>
-            <p class="lead text-muted text-white">You can get in touch with us </p>
+            <h2 class="display-3 text-white"> Contact Us</h2>
+            <p class="lead text-muted text-white"> You can get in touch with us </p>
           </div>
         </div>
       </div>
@@ -481,21 +495,21 @@
               <div class="card-body p-lg-5">
               
 					<div class="contact-info-box address clearfix">
-						<h3><i class=" icon-map-marker"></i>Address:</h3>
-						<span>University of Port harcourt<br>Choba, Port Harcourt, Rivers State.</span>
+						<h3><i class="fa fa-address-card"></i> Address:</h3>
+						<span> University of Port harcourt <br> Choba, Port Harcourt, Rivers State.</span>
 					</div>
 					<div class="contact-info-box phone clearfix">
-						<h3><i class="fa fa-phone"></i>Phone:</h3>
-						<span>+234-8063-908-020</span>
-						<span>+234-8133-627-610</span>
+						<h3><i class="fa fa-phone"></i> Phone:</h3>
+						<span> +234-8063-908-020</span>
+						<span> +234-8133-627-610</span>
 					</div>
 					<div class="contact-info-box email clearfix">
-						<h3><i class="fa fa-pencil"></i>email:</h3>
-						<span>uniquemappersteam@gmail.com</span>
+						<h3><i class="fa fa-envelope"></i> email:</h3>
+						<span> uniquemappersteam@gmail.com</span>
 					</div>
 					<div class="contact-info-box hours clearfix">
-						<h3><i class="fa fa-clock-o"></i>Hours:</h3>
-						<span><strong>Monday - Thursday:</strong> 10am - 7pm<br><strong>Friday:</strong> 10am - 4pm<br><strong>Saturday - Sunday:</strong> Not avaliable</span>
+						<h3><i class="fa fa-clock-o"></i> Hours:</h3>
+						<span><strong> Monday - Thursday:</strong> 10am - 7pm<br><strong>Friday:</strong> 10am - 4pm<br><strong>Saturday - Sunday:</strong> Not avaliable</span>
 					</div>
 					<ul class="social-link">
 						<li class="twitter"><a href="https://twitter.com/@uniquemappers"><i class="fa fa-twitter"></i></a></li>

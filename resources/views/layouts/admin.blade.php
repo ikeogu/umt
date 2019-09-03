@@ -6,10 +6,10 @@
       <meta http-equiv="X-UA-compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, intial-scale=1">
       <title>Admin| Dashboard</title>
-      <link href="{{ asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
+      <link href="{{ secure_asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
       <!-- core css -->
-      <link href="{{asset('css/bootstrap2.min.css')}}" rel="stylesheet">
-      <link href="{{asset('css/style2.css')}}" rel="stylesheet">
+      <link href="{{secure_asset('css/bootstrap2.min.css')}}" rel="stylesheet">
+      <link href="{{secure_asset('css/style2.css')}}" rel="stylesheet">
       
      
   </head>
@@ -202,7 +202,7 @@
           ======================================== -->
           <!-- placed at the end of the document so the pages load faster -->
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-          <script src="{{asset('js/bootstrap.min.js')}}"></script>
+          <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
       </body>
   
       </html>

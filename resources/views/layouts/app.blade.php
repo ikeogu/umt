@@ -20,14 +20,14 @@
     <!-- Favicon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="{{ asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
+  <link href="{{ secure_asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
   <!-- Fonts -->
  
   <!-- Icons -->
-  <link href="{{ asset('vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
-  <link href="{{ asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{ secure_asset('vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
+  <link href="{{ secure_asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
   <!-- Argon CSS -->
-  <link type="text/css" href="{{ asset('css/argon.css')}}" rel="stylesheet">
+  <link type="text/css" href="{{ secure_asset('css/argon.css')}}" rel="stylesheet">
   <script src="{{ mix('js/app.js') }}"></script>
  
 </head>
@@ -37,7 +37,7 @@
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
       <div class="container">
         <a class="navbar-brand mr-lg-5" href="/">
-          <img src="{{asset('img/brand/blue.png')}}">
+          <img src="{{secure_asset('img/brand/blue.png')}}">
          <span style="text-transform:capitalize">UniqueMappersTeam</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="/">
-                  <img src="{{asset('img/brand/blue.png')}}">
+                  <img src="{{secure_asset('img/brand/blue.png')}}">
                   <span >UniqueMappersTeam</span>
                 </a>
               </div>
@@ -226,17 +226,17 @@
     </div>
   </footer>
   <!-- Core -->
-  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('vendor/popper/popper.min.js')}}"></script>
-  <script src="{{asset('vendor/bootstrap/bootstrap.min.js')}}"></script>
-  <script src="{{asset('vendor/headroom/headroom.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/popper/popper.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/bootstrap/bootstrap.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/headroom/headroom.min.js')}}"></script>
   <!-- Argon JS -->
-  <script src="{{asset('vendor/onscreen/onscreen.min.js')}}"></script>
-  <script src="{{asset('vendor/nouislider/js/nouislider.min.js')}}"></script>
-  <script src="{{asset('vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/onscreen/onscreen.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/nouislider/js/nouislider.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <script src="{{asset('js/argon.js')}}"></script>
+  <script src="{{secure_asset('js/argon.js')}}"></script>
 
 </body>
 </html>
