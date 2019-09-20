@@ -114,29 +114,57 @@
             <div class="row justify-content-center">
                 <div class="col-4 col-sm-4 col-md-4 mx-auto">
                     <div class="card p-3" id="card">
-                    <img src="img/2.jpg" alt=""  width="150" class="img-fluid mx-auto">
+                    <img src="img/7.jpeg" alt=""  width="150" class="img-fluid mx-auto">
                     <i class="fas fa-quote-right text-center "></i>
-                    <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="text-right"><strong>John Smith-CEO, yeti LLC</strong></p>
+                    <p class="pt-2">Executive Dir / Cordinator.</p>
+                    <p class="text-right"><strong>Victor Sunday, N</strong></p>
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 mx-auto pt-2">
                     <div class="card p-3" id="card">
-                        <img src="img/1.jpg" alt="" width="150" class="img-fluid mx-auto">
+                        <img src="img/0.jpg" alt="" width="150" class="img-fluid mx-auto">
                     <i class="fas fa-quote-right text-center"></i> 
-                    <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <p class="text-right"><strong>John Smith-CEO, yeti LLC</strong></p>
+                    <p class="pt-2">Dir Technology</p>
+                    <p class="text-right"><strong>Emmanuel C., Ikeogu</strong></p>
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 mx-auto pt-2">
                 <div class="card p-3" id="card">
                     <img src="img/1.jpg" alt="" width="150" class="img-fluid mx-auto">
                 <i class="fas fa-quote-right text-center"></i> 
-                <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <p class="text-right"><strong>John Smith-CEO, yeti LLC</strong></p>
+                <p class="pt-2">Director Finance</p>
+                <p class="text-right"><strong>Eberechi</strong></p>
                 </div>
             </div>
             </div>
         </div>
+        <div class="container" id="testimony">
+                <div class="row justify-content-center">
+                    <div class="col-4 col-sm-4 col-md-4 mx-auto">
+                        <div class="card p-3" id="card">
+                        <img src="img/3.jpeg" alt=""  width="150" class="img-fluid mx-auto">
+                        <i class="fas fa-quote-right text-center "></i>
+                        <p class="pt-2"> South West Cordinator.</p>
+                        <p class="text-right"><strong>Dr Ulocha Nma</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 mx-auto pt-2">
+                        <div class="card p-3" id="card">
+                            <img src="img/.jpg" alt="" width="150" class="img-fluid mx-auto">
+                        <i class="fas fa-quote-right text-center"></i> 
+                        <p class="pt-2">North East Reg Cordinator</p>
+                        <p class="text-right"><strong>Nnadi   Onyenukwu</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 mx-auto pt-2">
+                    <div class="card p-3" id="card">
+                        <img src="img/1.jpg" alt="" width="150" class="img-fluid mx-auto">
+                    <i class="fas fa-quote-right text-center"></i> 
+                    <p class="pt-2">South East Reg Cordinator</p>
+                    <p class="text-right"><strong>Victor Ezeugwu</strong></p>
+                    </div>
+                </div>
+                </div>
+            </div>
     </section>    
 @endsection

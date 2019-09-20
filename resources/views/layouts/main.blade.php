@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{secure_asset('css/bootstrap3.min.css')}}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/72094f5737.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!--Main css-->
   <link rel="stylesheet" href="{{secure_asset('css/style3.css')}}">
@@ -81,7 +81,7 @@
         <li><a href="{{route('board')}}">Board of Trustees </a></li>
         <li><a href="{{route('blog.index')}}">Blog</a></li>
         <li><a href="{{route('contact.create')}}">Contact</a></li>
-        <li><button class="btn btn-btn btn-fill">Register</button></li>
+        <li><a class="btn btn-btn btn-fill" href="https://docs.google.com/forms/d/e/1FAIpQLScxaovxjtJzRoZFFPnExW72WOM2FJG-yPykSfVuPsCvRoxaSw/viewform" target="_blank">Register</a></li>
        
       </ul>
       <div class="menu-toggle">
