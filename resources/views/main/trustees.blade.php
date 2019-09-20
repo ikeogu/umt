@@ -11,8 +11,7 @@
                 <div class="col-12 col-sm-6 col-md-8 mx-auto pt-4">
                     <div class="container">
                         <h2 class="title__head">Incoporated Trustees</h2>
-                        <p>ONLINE CROWDSOURCED MAPPING
-                          A gathering of Volunteers to create and edit professional quality mobile digital maps that are up-to-date on events such as humanitarian crises, crime, wars and natural disasters. We join emergency response efforts led by the Humanitarian OpenStreetMap Team (HOT) when an active crises arises. We proactively map the places in the world where the most vulnerable people live that are not accessible in the map.
+                        <p>We are not just a commoner. but made of up able Potentials Leaders.
                           </p>
                         
                     </div>
@@ -122,7 +121,7 @@
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 mx-auto pt-2">
                     <div class="card p-3" id="card">
-                        <img src="img/0.jpg" alt="" width="150" class="img-fluid mx-auto">
+                        <img src="img/o.jpg" alt="" width="150" class="img-fluid mx-auto">
                     <i class="fas fa-quote-right text-center"></i> 
                     <p class="pt-2">Dir Technology</p>
                     <p class="text-right"><strong>Emmanuel C., Ikeogu</strong></p>
