@@ -8,7 +8,7 @@
               <div class="carousel-item active" data-interval="20000">
                 <img src="./img/theme/download.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-sm-block">
-                  <h2 id="t1">UniqueMappersTeam</h2>
+                  <h2 id="t1"> UniqueMappersTeam</h2>
                   <h4 style="color:white" id="t1"> A Community based NGO<span> for</span></h4>
                   <ul>
                     <li><p id="t1">Mobile Data Collection</p></li>

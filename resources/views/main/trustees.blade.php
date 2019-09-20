@@ -49,7 +49,7 @@
         <div class="row justify-content-center">
             <div class="col-10 col-sm-6 col-md-5 mx-auto">
                 <div class="card p-4" id="card">
-                 <img src="img/1.jpg" alt="" width="150" class="img-fluid mx-auto">
+                 <img src="img/1.JPG" alt="" width="150" class="img-fluid mx-auto">
                 <i class="fas fa-quote-right text-center"></i> 
                 <p class="pt-2">Trustee Associate</p>
                 <p class="text-right"><strong>Peter Michela, Johannes</strong></p>

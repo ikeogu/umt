@@ -13,9 +13,9 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!--Main css-->
-  <link rel="stylesheet" href="{{secure_asset('css/style3.css')}}">
+  <link rel="stylesheet" href="{{secure_asset('/css/style3.css')}}">
   <!--Font awesome-->
-  <link rel="stylesheet" href="{{secure_asset('css/all3.css')}}">
+  <link rel="stylesheet" href="{{secure_asset('/css/all3.css')}}">
   <title>UniqueMappers </title>
   <script src="https://unpkg.com/scrollreveal@4"></script>
   <script>
