@@ -12,15 +12,34 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('main/index');
 });
+Route::get('/uniquemappers', function () {
+    return view('index');
+})->name('local');
+Route::get('/main_us', function () {
+    return view('main/about');
+})->name('main_us');
+
+Route::get('/blog', function () {
+    return view('main/blog');
+})->name('blog');
+Route::get('/single_post', function () {
+    return view('main/blog/show');
+})->name('single');
+
+Route::get('/board', function () {
+    return view('main/trustees');
+})->name('board');
+
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/profile', 'UserController@update_avatar');
 
-
+Route::resource('contact', 'ContactController');
 //For the Admin Controller
 Route::get('/admin', 'HomeController@admin')->middleware('admin');
 Route::resource('/admin','AdminController');
@@ -34,12 +53,13 @@ Route::get('/allattend','AdminController@allAttend')->name('allattend');
 Route::get('/allimages','AdminController@allimage')->name('allimage');
 Route::get('/allres','AdminController@allres')->name('allres');
 Route::get('/makeModerator/{key}/edit','UserController@moderator');
-
+Route::get('allblog','BlogController@index2')->name('allblog');
 
 //
 Route::resource('bod','BoDController');
 Route::resource('users','UserController');
-
+Route::resource('blog', 'BlogController');
+    
 Route::resource('mgtteam','MgtTeamController');
 Route::resource('project','ProjectController');
 Route::resource('gallery','GalleryController');

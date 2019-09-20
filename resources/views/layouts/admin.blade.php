@@ -6,10 +6,10 @@
       <meta http-equiv="X-UA-compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, intial-scale=1">
       <title>Admin| Dashboard</title>
-      <link href="{{ secure_asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
+      <link href="{{ asset('favicon/favicon.ico')}}" rel="icon" type="image/png">
       <!-- core css -->
-      <link href="{{secure_asset('css/bootstrap2.min.css')}}" rel="stylesheet">
-      <link href="{{secure_asset('css/style2.css')}}" rel="stylesheet">
+      <link href="{{asset('css/bootstrap2.min.css')}}" rel="stylesheet">
+      <link href="{{asset('css/style2.css')}}" rel="stylesheet">
       
      
   </head>
@@ -96,6 +96,11 @@
                               Add training Courses
                               
                           </a>
+                          <a class="list-group-item" href="{{route('blog.create')}}">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 
+                            Make a Post
+                            
+                        </a>
                           <a href="{{route('allattend')}}" class="list-group-item"><span class="glyphicon glyphicon-list-alt"
                               aria-hidden="true"></span> All Attendance<span class="badge">{{App\Attendance::count()}}</span>
                           </a>
@@ -113,7 +118,13 @@
                                 <span class="glyphicon glyphicon-list-alt"  aria-hidden="true"></span>
                                     All Project
                                     <span class="badge">{{App\Project::count()}}</span>
-                                </a>
+                         </a>
+                          <a class="list-group-item" href="{{route('contact.index')}}">
+                                <span class="glyphicon glyphicon-list-alt"  aria-hidden="true"></span>
+                                    All Inbox
+                                    <span class="badge">{{App\Contact::count()}}</span>
+                          </a>
+                            
               
                          
                           
@@ -133,7 +144,10 @@
                               <span class="badge">{{App\BoD::count()}}</span>
                           </a>
                           
-                          
+                          <a class="list-group-item" href="{{route('allblog')}}">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            All Post <span class="badge">{{App\Blog::count()}}</span>
+                        </a>
                           <a class="list-group-item" href="{{route('gallery.index')}}">
                               <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
                               All Gallery<span class="badge">{{App\Gallery::count()}}</span>
@@ -169,14 +183,14 @@
                               </div>
                               <div class="col-md-3">
                                   <div class="well dash-box">
-                                      <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> {{App\Project::count()}}</h2>
-                                      <h4>Projects</h4>
+                                      <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> {{App\Contact::count()}}</h2>
+                                      <h4>Inbox</h4>
                                   </div>
                               </div>
                               <div class="col-md-3">
                                   <div class="well dash-box">
-                                      <h2><span class="glyphicon glyphicon-list" aria-hidden="true"></span> {{App\Research::count()}}</h2>
-                                      <h4>Research</h4>
+                                      <h2><span class="glyphicon glyphicon-list" aria-hidden="true"></span> {{App\Blog::count()}}</h2>
+                                      <h4>Blog</h4>
                                   </div>
                               </div>
 
@@ -192,7 +206,7 @@
           </section>
   
           <footer id="footer">
-              <p>Copyright AdminStrap &copy; 2018</p>
+          <p>Copyright UniMappersTeam &copy; {{date('Y')}}</p>
           </footer>
   
          
@@ -202,7 +216,7 @@
           ======================================== -->
           <!-- placed at the end of the document so the pages load faster -->
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-          <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
+          <script src="{{asset('js/bootstrap.min.js')}}"></script>
       </body>
   
       </html>

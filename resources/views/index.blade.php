@@ -129,7 +129,7 @@
           <div class="row row-grid align-items-center">
               <div class="col-md-6">
                 <div class="row">
-                  <div class=" bg-default shadow border-0 ">
+                  <div class=" bg-default shadow border-0 p-5">
                     <img src="{{asset('img/theme/benefits.png')}}" class="card-img-top" height="500" width="1500">
                   </div>
                   

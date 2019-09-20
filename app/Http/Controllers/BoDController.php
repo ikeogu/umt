@@ -18,7 +18,7 @@ class BoDController extends Controller
     public function index()
     {
        $bod = BoD::all();
-       return view('bod/index',['bod'=>$bod]);
+       return view('BoD/index',['bod'=>$bod]);
     }
 
     /**
@@ -28,7 +28,7 @@ class BoDController extends Controller
      */
     public function create()
     {
-        return view('Bod/create');
+        return view('BoD/create');
     }
 
     /**
@@ -98,7 +98,7 @@ class BoDController extends Controller
     public function edit($id)
     {
         $pro = BoD::findOrFail($id);
-        return view('Bod/edit',['bod'=>$pro]);
+        return view('BoD/edit',['bod'=>$pro]);
     }
 
     /**
