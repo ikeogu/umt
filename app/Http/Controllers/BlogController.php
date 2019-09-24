@@ -14,8 +14,17 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = Blog::paginate(8);
-        return view('main/blog/index',['blog'=>$blog]);
+        try {
+            $blog = Blog::paginate(8);
+            foreach($blog as $blo){
+                $status = $blo->status;
+            }
+        
+            return view('main/blog/index',['blog'=>$blog,'status'=>$status]);
+        } catch (\Throwable $th) {
+            return view('main/blog/index',['blog'=>$blog,'status'=> 0]);
+        }
+        
     }
     public function index2()
     {
@@ -58,22 +67,25 @@ class BlogController extends Controller
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image$image = Cloudinary\Uploader::upload($fileNameToStore);
               
-            $image_url = $request->file('image')->storeAs('public/blog_post/',$fileNameToStore);
+            $path = $request->file('image')->storeAs('public/blog_post/',$fileNameToStore);
               
             
          
         }else{
-            $image_url = 'noimage.jpg';
+            $fileNameToStore = 'noimage.jpg';
         }
+       
         $post = new Blog();
         $post->title = $request->title;
         $post->subtitle = $request->subtitle;
-        $post->image = $image_url;
+        $post->image = $fileNameToStore;
         $post->body = $request->body;
+        $post->status = $request->status;
 
         if($post->save()){
-            return redirect(route('blog.create'))->with("Posted Successfully");
+            return redirect(route('blog.create'))->with('success','Posted Successfully');
         }
+        
     }
 
     /**

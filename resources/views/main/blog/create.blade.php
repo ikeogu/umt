@@ -21,7 +21,7 @@
         
   <div class="panel panel-default">
       <div class="panel-heading main-color-bg">
-          <h3 class="panel-title">Post to blog</h3>
+          <h3 class="panel-title">Post to Our Blog</h3>
       </div>
       <div class="panel-body">
           <form method="POST" action="{{ route('blog.store') }}" role="form" enctype="multipart/form-data">
@@ -32,7 +32,7 @@
                       <div class="form-group">
                           <label for="exampleFormControlFile1">Upload image</label>
                           <input type="file" class="form-control-file"
-                              id="exampleFormControlFile1" name="image">
+                              id="exampleFormControlFile1" name="image" required>
                       </div>
                       <div class="form-group">
                         <label>Title</label>
@@ -54,7 +54,14 @@
                         </span>
                         @endif
                       </div>
-                    
+                      <div class="form-group">
+                            <label>What kind of post do you want to make</label>
+                          <select name="status" class="form-control{{ $errors->has('status') ? ' is-invalid' : '' }}" required>
+                               
+                              <option value="1">Event Post</option>
+                              <option value="2">Article Post</option>
+                          </select>
+                      </div>
                       <div class="form-group">
                         <textarea id="body" type="text" class="form-control{{ $errors->has('body') ? ' is-invalid' : '' }}" name="body" value="{{ old('body') }}" required placeholder="Quote ...."></textarea>
   

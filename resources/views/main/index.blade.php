@@ -7,16 +7,17 @@
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="20000">
                 <img src="./img/theme/download.jpg" class="d-block w-100" alt="...">
+               
                 <div class="carousel-caption d-sm-block">
-                  <h2 id="t1"> UniqueMappersTeam</h2>
-                  <h4 style="color:white" id="t1"> A Community based NGO<span> for</span></h4>
+                  <h2 > UniqueMappersTeam</h2>
+                  <h4 style="color:white" > A Community based NGO<span> for</span></h4>
                   <ul>
-                    <li><p id="t1">Mobile Data Collection</p></li>
-                    <li><p id="t1"> Open Data Mapping</p></li>
-                    <li><p id="t1"> Open Source Geospatial Empowerment</p></li>
-                    <li><p id="t1">Humanitarian Response Mapping Team</p></li>
-                    <li><p id="t1"> OpenStreetMap Nigeria Community</p></li>
-                    <li><p id="t1"> Participatory Citizen Science</p></li>
+                    <li><p >Mobile Data Collection</p></li>
+                    <li><p > Open Data Mapping</p></li>
+                    <li><p > Open Source Geospatial Empowerment</p></li>
+                    <li><p >Humanitarian Response Mapping Team</p></li>
+                    <li><p > OpenStreetMap Nigeria Community</p></li>
+                    <li><p > Participatory Citizen Science</p></li>
                   </ul>
                  
                 </div>
@@ -249,23 +250,23 @@
         <div class="container" id="contact">
         <div class="links">
             <aside>
-                <a><i class="fas fa-envelope fa-2x" href="uniquemappersteam@gmail.com"></i></a>
+                <a><i class="fas fa-envelope " href="uniquemappersteam@gmail.com"></i></a>
                 
-                <a><i class="fas fa-phone fa-2x"></i></a>
+               
                 
                 <a href=""> <a target="_blank" href="https://facebook.com/uniquemappersteam"
                     data-toggle="tooltip" data-original-title="Like us">
-                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <i class="fab fa-facebook-f "></i>
                 </a>
                 
                 <a target="_blank" href="https://twitter.com/@uniquemappers" data-toggle="tooltip" data-original-title="Follow us">
-                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-twitter "></i>
                 </a>
                
                 
                 
                 <a target="_blank" href="https://github.com/ikeogu/umt"  data-toggle="tooltip" data-original-title="Star on Github">
-                <i class="fab fa-github fa-2x"></i>
+                <i class="fab fa-github "></i>
                 </a>
             </aside>   
                 

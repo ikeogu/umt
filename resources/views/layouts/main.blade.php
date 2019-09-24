@@ -8,14 +8,14 @@
 
   <!--Bootstrap css-->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <link rel="stylesheet" href="{{secure_asset('css/bootstrap3.min.css')}}">
+  <link rel="stylesheet" href="{{asset('css/bootstrap3.min.css')}}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/72094f5737.js" crossorigin="anonymous"></script>
   <!--Main css-->
-  <link rel="stylesheet" href="{{secure_asset('/css/style3.css')}}">
+  <link rel="stylesheet" href="{{asset('css/style3.css')}}">
   <!--Font awesome-->
-  <link rel="stylesheet" href="{{secure_asset('/css/all3.css')}}">
+  <link rel="stylesheet"  href="{{asset('css/all3.css')}}">
   <title>UniqueMappers </title>
   <script src="https://unpkg.com/scrollreveal@4"></script>
   <script>
@@ -40,7 +40,6 @@
       <li>|</li>
       <li><i class="fas fa-phone"></i></li>
       <li>+234  806 3908 020</li>
-      <li>+234  810 2779 652</li>
     </ul>
     <ul class="social_links">
       <li><a href=""> <a target="_blank" href="https://facebook.com/uniquemappersteam"
@@ -52,16 +51,9 @@
         <i class="fab fa-twitter"></i>
       </a>
     </li>
-     
-      <li>
-        <a target="_blank" href="https://github.com/ikeogu/umt"  data-toggle="tooltip" data-original-title="Star on Github">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      
       <li>
         <a  href="{{route('local')}}" style="color:aliceblue">
-          visit uniquemappersteam (local)
+          UMT
         </a>
       </li>
     </ul>
@@ -72,7 +64,7 @@
   <header>
     <nav>
       <div class="branding">
-        <h2>UniqueMappers Open Source Network</h2>
+        <h3>UMT Network</h3>
       </div>
       <ul class="nav-links">
         <li><a href="/" class="active">Home</a></li>
@@ -81,7 +73,7 @@
         <li><a href="{{route('board')}}">Board of Trustees </a></li>
         <li><a href="{{route('blog.index')}}">Blog</a></li>
         <li><a href="{{route('contact.create')}}">Contact</a></li>
-        <li><a class="btn btn-btn btn-fill" href="https://docs.google.com/forms/d/e/1FAIpQLScxaovxjtJzRoZFFPnExW72WOM2FJG-yPykSfVuPsCvRoxaSw/viewform" target="_blank">Register</a></li>
+        <li class="text-white"><a class="btn btn-btn btn-fill " href="https://docs.google.com/forms/d/e/1FAIpQLScxaovxjtJzRoZFFPnExW72WOM2FJG-yPykSfVuPsCvRoxaSw/viewform" target="_blank" id="btn">Register</a></li>
        
       </ul>
       <div class="menu-toggle">
@@ -124,10 +116,22 @@
             <div class="container">
               <ul>
                 <li> <a href="{{route('main_us')}}">About</a></li>
-                <li> <a href="#">Privacy Policy</a></li>
+                
                 <li> <a href="#">Consultancy</a></li>
                 <li> <a href="{{route('contact.create')}}">Contact us</a></li>
-                <li> <a href="#">Terms And Conditions</a></li>
+               
+                  
+              <li>
+                <a target="_blank" href="https://github.com/ikeogu/umt"  data-toggle="tooltip" data-original-title="Star on Github">
+                  <i class="fab fa-github">Github Page</i>
+                </a>
+              </li>
+              
+              <li>
+                <a  href="{{route('local')}}" style="color:aliceblue" id="umt">
+                  UMT (local)
+                </a>
+              </li>
               </ul>
             </div>
           </div>
@@ -170,9 +174,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
   crossorigin="anonymous"></script>
-<script src="{{secure_asset('js/bootstrap3.bundle.min.js')}}"></script>
+<script src="{{asset('js/bootstrap3.bundle.min.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="{{secure_asset('js/script3.js')}}"></script>
+<script src="{{asset('js/script3.js')}}"></script>
 <script>
   sr.reveal('#contact', {
     origin: 'left',
