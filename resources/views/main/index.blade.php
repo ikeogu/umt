@@ -90,9 +90,9 @@
             <div class="col-10 col-sm-6 col-md-8 mx-auto">
               <div class="container">
                 <h2 class="title__head">What Our Platform Offers You</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sunt magni numquam architecto facere
-                  culpa voluptate modi temporibus totam cum, at, voluptatum cupiditate molestiae ab illo. Delectus dolorum
-                  doloremque error beatae in voluptatem nostrum. Ratione repellendus vitae delectus veniam consectetur.</p>
+                <p>We can carry out financial inclusive community research using mobile data and geospatial technology And make such data globally accessible We engage the youths in national mapping competition and needs corporate partnership support, We define vulnerable communities for response</p>
+                <p>OpenStreetMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations, and much more, all over the world.
+                  </p>
               </div>
               <div class="row">
                 <div class="col-10 col-md-6 col-sm-4 mx-auto py-3">
@@ -138,11 +138,25 @@
             </div>
             <div class="col-10 col-sm-6 col-md-8 mx-auto">
             <div class="container">
-                <h2 class="title__head">How it works</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quos atque repudiandae architecto.
-                Libero, consectetur. Mollitia, reiciendis? Consectetur, tempore possimus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quos atque repudiandae architecto.
-                Libero, consectetur. Mollitia, reiciendis? Consectetur, tempore possimus!</p>
+                <h2 class="title__head">SUSTAINABLE MAPPING OF OUR ENVIRONMENT</h2>
+               <p> Equipping its members with Frontline practical mapping and geospatial.</p>
+                <h4 class="title__head">FEATURED WORK</h4>
+                <p>We work together, we explore, we impact and we map the difference.
+                   
+                    </p>
+                <p> we provide the map that saves life.
+                    we build mappers.</p>
+                <h6>Achievement Links </h6>
+                <ul>
+                  <li> <a href="https://twitter.com/VictorS60596921
+                    ">UniqueMappersTeam Twitter page </a></li>
+                  <li> <a href="https://twitter.com/uniquemappers
+                    "> UniqueMappersTeam </a> </li>
+                  <li> <a href="http://blogs.discovermagazine.com/citizen-science-salon/2019/03/20/fighting-alzheimers-disease-during-the-megathon-spotlight-on-three-citizen-scientists/#.XP21LlxKiM9">Fighting Alzheimers Disease During the Megathon</a> </li>
+                  <li> <a href="https://www.hotosm.org/updates/uniquemappersteam-collaboration-with-transparent-earth-nigeria-ltd/">UniqueMappersTeam Collaboration with Transparent Earth Nigeria Ltd</a> </li>
+                  <li> <a href="https://www.hotosm.org/updates/ripples-of-hot-micro-grants-impact-on-uniquemappersteam-community/">Ripples of HOT Micro Grant impact on UniqueMappersTeam Community</a> </li>
+                 
+                </ul>
             </div>
             </div>
         </div>

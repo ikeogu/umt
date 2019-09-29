@@ -31,6 +31,9 @@ Route::get('/single_post', function () {
 Route::get('/board', function () {
     return view('main/trustees');
 })->name('board');
+Route::get('/what_we_offer', function () {
+    return view('main/offer');
+})->name('offer');
 
 
 

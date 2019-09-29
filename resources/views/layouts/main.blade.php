@@ -69,7 +69,7 @@
       <ul class="nav-links">
         <li><a href="/" class="active">Home</a></li>
         <li><a href="{{route('main_us')}}">About us</a></li>
-        <li><a href="#offer">What We Offer</a></li>
+        <li><a href="{{route('offer')}}">What We Offer</a></li>
         <li><a href="{{route('board')}}">Board of Trustees </a></li>
         <li><a href="{{route('blog.index')}}">Blog</a></li>
         <li><a href="{{route('contact.create')}}">Contact</a></li>
@@ -187,6 +187,18 @@
   });
 
   sr.reveal('.card, #choose', {
+    origin: 'right',
+  });
+  sr.reveal('.bottom, #choose', {
+    origin: 'bottom',
+  });
+  sr.reveal('.left, #choose', {
+    origin: 'left',
+  });
+  sr.reveal('.top, #choose', {
+    origin: 'top',
+  });
+  sr.reveal('.right, #choose', {
     origin: 'right',
   });
 
