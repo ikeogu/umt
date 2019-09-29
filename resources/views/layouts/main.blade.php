@@ -21,7 +21,7 @@
   <script>
     window.sr = ScrollReveal({
       distance: '100px',
-      duration: 1000,
+      duration: 5000,
       easing: 'ease',
       mobile: true,
       reset: false,

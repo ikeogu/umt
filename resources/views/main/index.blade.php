@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 mx-auto pt-5">
                 <div class="container">
-                    <img src="/img/about.jpg" class="img-fluid" alt="">
+                    <img src="/img/about.png" class="img-fluid" alt="">
                 </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 mx-auto pt-4">
@@ -84,7 +84,7 @@
     </section>
     <!-- why choose us end-->
     <!--what we offer -->
-    <section class="we__offer">
+    <section class="we__offer left">
         <div class="container">
           <div class="row" id="offer">
             <div class="col-10 col-sm-6 col-md-8 mx-auto">
@@ -94,7 +94,7 @@
                 <p>OpenStreetMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations, and much more, all over the world.
                   </p>
               </div>
-              <div class="row">
+              {{-- <div class="row">
                 <div class="col-10 col-md-6 col-sm-4 mx-auto py-3">
                   <ul>
                     <li><img src="./img/security.png" class="img-fluid" alt=""> Security</li>
@@ -115,11 +115,11 @@
                     <li><img src="./img/call.png" class="img-fluid" alt=""> 24 Hours Support</li>
                   </ul>
                 </div>
-              </div>
+              </div> --}}
             </div>
             <div class="col-10 col-sm-6 col-md-4 mx-auto">
               <div class="container">
-                <img src="img/offer.jpg" class="img-fluid" alt="">
+                <img src="img/offer.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -128,12 +128,12 @@
     <!-- what we offer end 
         =========================================================-->
     <!-- How it works -->
-    <section class="works mt-sm-4">
+    <section class="works mt-sm-4 right">
         <div class="container">
         <div class="row" id="works">
             <div class="col-10 col-sm-6 col-md-4 mx-auto">
             <div class="container">
-                <img src="img/img.png" class="img-fluid" alt="">
+                <img src="img/osm.png" class="img-fluid" alt="">
             </div>
             </div>
             <div class="col-10 col-sm-6 col-md-8 mx-auto">
@@ -164,7 +164,7 @@
     </section>
   <!-- How it works end 
     ==========================================================-->
-    <section class="plans">
+    <section class="plans top">
         <div class="container" id="plans">
             <h2 class="title__head pb-5 text-center">OUR AMAZING PARTNER AND SUPPORTERS</h2>
             <div class="row card-body">
@@ -243,7 +243,7 @@
         </div>
     </section>
      <!-- map -->
-    <section class="map">
+    <section class="map bottom">
         <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -262,26 +262,31 @@
     <section class="connect">
         <h2 class="title__head text-center">Let's Connect!</h2>
         <div class="container" id="contact">
-        <div class="links">
-            <aside>
-                <a><i class="fas fa-envelope " href="uniquemappersteam@gmail.com"></i></a>
+        <div class="links row">
+            <aside class="col-6">
+              <ul>
+                <li>
+                    <a><i class="fas fa-envelope " href="uniquemappersteam@gmail.com"></i></a>
+                </li>
+                <li>
+                    <a href=""> <a target="_blank" href="https://facebook.com/uniquemappersteam"
+                      data-toggle="tooltip" data-original-title="Like us">
+                      <i class="fab fa-facebook-f "></i>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/@uniquemappers" data-toggle="tooltip" data-original-title="Follow us">
+                      <i class="fab fa-twitter "></i>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/ikeogu/umt"  data-toggle="tooltip" data-original-title="Star on Github">
+                      <i class="fab fa-github "></i>
+                      </a>
+                </li>
+              </ul>
                 
-               
                 
-                <a href=""> <a target="_blank" href="https://facebook.com/uniquemappersteam"
-                    data-toggle="tooltip" data-original-title="Like us">
-                    <i class="fab fa-facebook-f "></i>
-                </a>
-                
-                <a target="_blank" href="https://twitter.com/@uniquemappers" data-toggle="tooltip" data-original-title="Follow us">
-                    <i class="fab fa-twitter "></i>
-                </a>
-               
-                
-                
-                <a target="_blank" href="https://github.com/ikeogu/umt"  data-toggle="tooltip" data-original-title="Star on Github">
-                <i class="fab fa-github "></i>
-                </a>
             </aside>   
                 
             
