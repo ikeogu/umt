@@ -170,19 +170,19 @@
             <div class="row card-body">
             <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
               <div class="px-4">
-                <img src="{{asset('img/theme/arc.jfif')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                <img src="{{asset('img/theme/hot.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
                 
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
               <div class="px-4">
-                <img src="{{asset('img/theme/iphone.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                <img src="{{asset('img/theme/gor.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
                 
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
               <div class="px-4">
-                <img src="{{asset('img/theme/qgis.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                <img src="{{asset('img/theme/msf.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
                 
               </div>
             </div>
@@ -201,7 +201,7 @@
               </div>
               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
                 <div class="px-4">
-                  <img src="{{asset('img/theme/OSM-Fight.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  <img src="{{asset('img/theme/mm.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
                   
                 </div>
               </div>
@@ -213,35 +213,96 @@
               </div>
               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
                 <div class="px-4">
-                  <img src="{{asset('img/theme/map.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover">
+                  <img src="{{asset('img/theme/stall.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover">
                   
                 </div>
               </div>
             </div>
+            
             <div class="row card-body">
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/g4a.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/sgeo.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/ten.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                    <div class="px-4">
+                      <img src="{{asset('img/theme/Geo.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                      
+                    </div>
+                  </div>
+                
+              </div>
+          </div>
+          <div class="row card-body">
               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
                 <div class="px-4">
-                  <img src="{{asset('img/theme/globe.png')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  <img src="{{asset('img/theme/youth.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
                   
                 </div>
               </div>
               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
                 <div class="px-4">
-                  <img src="{{asset('img/theme/mos.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  <img src="{{asset('img/theme/glo.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
                   
                 </div>
               </div>
               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
                 <div class="px-4">
-                  <img src="{{asset('img/theme/stall.jpg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  <img src="{{asset('img/theme/sci.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
                   
                 </div>
               </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/osm.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
               
             </div>
           </div>
-        </div>
-    </section>
+          <div class="row card-body">
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/geoson.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/mw.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                <div class="px-4">
+                  <img src="{{asset('img/theme/uni.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 partner">
+                  <div class="px-4">
+                    <img src="{{asset('img/theme/unn.jpeg')}}" class=" img-center img-fluid shadow shadow-lg--hover" >
+                    
+                  </div>
+                </div>
+              
+            </div>
+        </section>
      <!-- map -->
     <section class="map bottom">
         <div class="container-fluid">
@@ -259,38 +320,5 @@
   <!-- map end 
       ==========================================================-->
 
-    <section class="connect">
-        <h2 class="title__head text-center">Let's Connect!</h2>
-        <div class="container" id="contact">
-        <div class="links row">
-            <aside class="col-6">
-              <ul>
-                <li>
-                    <a><i class="fas fa-envelope " href="uniquemappersteam@gmail.com"></i></a>
-                </li>
-                <li>
-                    <a href=""> <a target="_blank" href="https://facebook.com/uniquemappersteam"
-                      data-toggle="tooltip" data-original-title="Like us">
-                      <i class="fab fa-facebook-f "></i>
-                  </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://twitter.com/@uniquemappers" data-toggle="tooltip" data-original-title="Follow us">
-                      <i class="fab fa-twitter "></i>
-                  </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/ikeogu/umt"  data-toggle="tooltip" data-original-title="Star on Github">
-                      <i class="fab fa-github "></i>
-                      </a>
-                </li>
-              </ul>
-                
-                
-            </aside>   
-                
-            
-        </div>
-        </div>
-  </section>
+    
 @endsection

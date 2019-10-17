@@ -70,7 +70,7 @@
         <li><a href="/" class="active">Home</a></li>
         <li><a href="{{route('main_us')}}">About us</a></li>
         <li><a href="{{route('offer')}}">What We Offer</a></li>
-        <li><a href="{{route('board')}}">Board of Trustees </a></li>
+        <li><a href="{{route('board')}}">Team </a></li>
         <li><a href="{{route('blog.index')}}">Blog</a></li>
         <li><a href="{{route('contact.create')}}">Contact</a></li>
         <li class="text-white"><a class="btn btn-btn btn-fill " href="https://docs.google.com/forms/d/e/1FAIpQLScxaovxjtJzRoZFFPnExW72WOM2FJG-yPykSfVuPsCvRoxaSw/viewform" target="_blank" id="btn">Register</a></li>
@@ -86,11 +86,13 @@
   <div class="news text-center">
     <marquee behavior="scroll" direction="right">
       <ul>
-        <li> We are <strong> Unique</strong> <i class="fas fa-caret-right color0"></i> In everything</li>
-        <li>We are <strong> Unique</strong> <i class="fas fa-caret-right color1"></i> In Mapping</li>
-        <li>We are  <strong> Unique</strong><i class="fas fa-caret-right color2"></i> Humaniterian Services</li>
-        <li>We are <strong> Unique</strong> <i class="fas fa-caret-right color0"></i> MappersTeam</li>
-        <li>We are<strong> Unique</strong> <i class="fas fa-caret-right color0"></i> Mapper Open Source Network</li>
+        <li> Unique<strong> Mappers</strong> <i class="fas fa-caret-right color0"></i> Team</li>
+        <li>UniqueMappers<strong>Open Source</strong> <i class="fas fa-caret-right color1"></i> Network</li>
+        <li>UniqueMappers<strong> Citizen Science</strong> <i class="fas fa-caret-right color0"></i> Network</li>
+        <li>We are  <strong> Unique in  Open Data</strong><i class="fas fa-caret-right color2"></i> Mapping</li>
+        
+        <li>Open Source<strong> Geospatial </strong> <i class="fas fa-caret-right color0"></i> Empowerment</li>
+        <li>Mobile<strong> Data Collection</strong> <i class="fas fa-caret-right color0"></i> </li>
       </ul>
     </marquee>
   </div>
@@ -103,11 +105,14 @@
         <div class="row">
           <div class="col-10 col-sm-4 col-md-4 px-3 mx-auto">
             <div class="container">
-              <h2 class="footer__title">UniqueMappers Open Source Network</h2>
+              <h2 class="footer__title">Unique Mappers Open Source and citizen Science Network</h2>
               <ul class="footer__links">
-                <li><i class="fab fa-facebook-f fab-links"></i></li>
-                <li><i class="fab fa-instagram fab-links"></i></li>
-                <li><i class="fab fa-twitter fab-links"></i></li>
+                <li> <a target="_blank" href="https://facebook.com/uniquemappersteam"
+                  data-toggle="tooltip" data-original-title="Like us"><i class="fab fa-facebook-f fab-links"></i></a></li>
+                  <a target="_blank" href="https://github.com/ikeogu/umt"  data-toggle="tooltip" data-original-title="Star on Github">
+                    <i class="fab fa-github fab-links"></i>
+                  </a>
+                <li><a target="_blank" href="https://twitter.com/@uniquemappers" data-toggle="tooltip" data-original-title="Follow us"><i class="fab fa-twitter fab-links"></i></a></li>
               </ul>
             </div>
           </div>
